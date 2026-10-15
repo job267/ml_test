@@ -1,0 +1,7 @@
+# Use consistent line endings for documentation and new supporting files.
+* text=auto eol=lf
+
+# Existing experiments hash the exact bytes of these files. Preserve both the
+# original LF baseline and the CRLF research scripts when cloning on Linux.
+/code/*.py -text
+/scripts/*.py -text

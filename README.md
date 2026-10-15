@@ -1,6 +1,15 @@
-# LightGCN — PyTorch 2.x compatibility baseline
+# LightGCN — PyTorch 2.x baseline and stage-one feedback experiments
 
-Clean compatibility-oriented reconstruction of [gusye1234/LightGCN-PyTorch](https://github.com/gusye1234/LightGCN-PyTorch), based on **LightGCN (SIGIR 2020)**. Keeps MF/LightGCN, normalized user–item bipartite adjacency, full graph propagation, mean pooling, one-negative BPR optimization, and Recall/Precision/NDCG @ K. No novel recommendation methods added.
+Clean compatibility-oriented reconstruction of [gusye1234/LightGCN-PyTorch](https://github.com/gusye1234/LightGCN-PyTorch), based on **LightGCN (SIGIR 2020)**. The legacy entrypoint keeps MF/LightGCN, normalized user–item bipartite adjacency, full graph propagation, mean pooling, one-negative BPR optimization, and Recall/Precision/NDCG @ K.
+
+Stage-one research now has a **separate** `code/experiment.py` entrypoint for temporal KuaiRand preparation, uniform/hard/reliable/curriculum samplers, validation-only training, isolated checkpoints with resume, and final test suites. These are experimental offline methods, not an implemented online reinforcement-learning system. Legacy model and training code remain unchanged.
+
+- [第一阶段实现与实验协议](docs/stage1_implementation.md)
+- [从上传云服务器到开始实验的完整步骤](docs/cloud_stage1_runbook.md)
+- [算法研究路线](docs/algorithm_research_roadmap.md)
+- [代码阅读指南](docs/code_structure.md) · [本地验证记录与限制](docs/stage1_validation.md)
+- [使用 GitHub 管理服务器代码](docs/github_server_workflow.md)
+- [第一轮正式实验的验证分析与后续方案](analysis/stage1_validation_20261015/README.md)
 
 ## Setup (WSL2 / Linux, Python 3.10)
 
@@ -44,4 +53,4 @@ Checkpoints are stored in `checkpoints/` and can be loaded using `--load 1` (opt
 - Uses portable Python BPR negative sampling; no pybind11/compiler required.
 - Adds repeatable miniature unit/smoke tests and explicit checkpoint loading.
 
-This is a reimplementation of the algorithm and workflow, **not** a byte-for-byte mirror of upstream code. Reproduction of upstream published metrics is not yet established; benchmark runs on Gowalla/Yelp2018 must be completed separately. Upstream repo is archived and does not declare a license in its root; check distribution rights before copying any additional upstream files.
+This is a reimplementation of the algorithm and workflow, **not** a byte-for-byte mirror of upstream code. The local handover records one successful Gowalla reproduction; its data, weights and logs are not included in this checkout. New KuaiRand method performance has not yet been established. Upstream repo is archived and does not declare a license in its root; check distribution rights before copying any additional upstream files.

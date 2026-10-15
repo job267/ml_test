@@ -1,0 +1,14 @@
+{
+  "methods": ["uniform", "hard", "reliable", "curriculum"],
+  "seeds": [2020, 2021, 2022],
+  "training": {
+    "model": "lgn", "recdim": 64, "layer": 3,
+    "lr": 0.001, "decay": 0.0001, "epochs": 1000,
+    "candidate_size": 20, "evidence_fraction": 0.5,
+    "weak_confidence": 0.2, "unknown_confidence": 0.05,
+    "reliability_beta": 1.0, "temperature": 1.0,
+    "targeted_rate": 0.8, "curriculum_epochs": 100,
+    "score_batch": 8192, "bpr_batch": 2048, "test_batch": 100,
+    "samples_per_epoch": 0, "eval_interval": 10, "topks": "[20]"
+  }
+}

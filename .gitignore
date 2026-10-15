@@ -6,3 +6,15 @@ runs/
 *.pyc
 *.pth.tar
 /data/
+/dist/
+
+# Local experiment archives, weights, environment snapshots and credentials.
+*.tar.gz
+*.zip
+*.pt
+*.pth
+*.ckpt
+environment*.txt
+.env
+.env.*
+!.env.example
