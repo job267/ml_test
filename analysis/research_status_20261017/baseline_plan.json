@@ -1,0 +1,123 @@
+{
+  "config": {
+    "schema_version": 1,
+    "seeds": [
+      2020,
+      2021,
+      2022
+    ],
+    "horizons": [
+      30,
+      100
+    ],
+    "training": {
+      "model": "lgn",
+      "recdim": 64,
+      "layer": 0,
+      "lr": 0.001,
+      "decay": 0.0001,
+      "sampler": "uniform",
+      "candidate_size": 20,
+      "evidence_fraction": 0.5,
+      "weak_confidence": 0.2,
+      "unknown_confidence": 0.05,
+      "reliability_beta": 1.0,
+      "temperature": 1.0,
+      "targeted_rate": 0.8,
+      "curriculum_epochs": 100,
+      "score_batch": 8192,
+      "bpr_batch": 2048,
+      "test_batch": 100,
+      "samples_per_epoch": 0,
+      "eval_interval": 1,
+      "topks": "[20]"
+    },
+    "references": {
+      "2020": "runs/stage1_beta_pilot_20261015/uniform-seed2020",
+      "2021": "runs/stage1_beta_replication_20261016/seed2021/uniform-seed2021",
+      "2022": "runs/stage1_beta_replication_20261016/seed2022/uniform-seed2022"
+    },
+    "mf_definition": "LightGCN layer=0 is MF/BPR with matched N(0,0.1) initialization. Native PureMF default N(0,1) is deliberately not mixed into the graph ablation.",
+    "selection": "Best overall validation NDCG@20 independently inside each common 30/100 epoch window. Every subgroup and Recall uses that same epoch. No current-protocol test evaluation.",
+    "public": {
+      "commit": "7753efd0a8cf3aaed9b150a3d835dbaa8fe0e50d",
+      "model": "lgn",
+      "algo": "vanilla",
+      "seeds": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "max_epochs": 600,
+      "batch_size": 2048,
+      "recdim": 64,
+      "layer": 3,
+      "lr": 0.001,
+      "decay": 0.0001,
+      "eval_interval": 5,
+      "selection": "Author default rounded validation Recall@10; original patience rule after epoch index>100, 20 evaluations, strict improvement only. Test deferred until stopping, evaluated once per seed with the selected checkpoint.",
+      "test_masks": "One scoring pass reports both original author compressed validation masking and corrected user-aligned masking. 3507 test users are absent from validation. Neither test metric influences selection.",
+      "purpose": "Independent author-code and author-split calibration; never compare raw scores to the current engagement/random-exposure protocol."
+    }
+  },
+  "config_sha256": "aab1c34b10817cd19fc7ea25da3e0bc786450392a3d7d79d5ad1a7c072c57627",
+  "environment": {
+    "gpu0_uuid": "GPU-341a3faf-c619-5dcd-4bc3-2019cb13e921",
+    "gpu": "NVIDIA RTX A6000",
+    "python": "/home/hdd3/zhaob/cache/conda/envs/gcn/bin/python",
+    "torch": "2.6.0+cu126",
+    "cuda_visible_devices": "0",
+    "cuda_device_order": "PCI_BUS_ID"
+  },
+  "code_sha256": {
+    "code/Procedure.py": "dfba4797c4fbb6303efa71b329b2165f21b26fd76ed936af50535a5966ab66d2",
+    "code/dataloader.py": "e7b811734789965271486a196618325d8270be53bc93fba7f6ce1e507cc7efd5",
+    "code/experiment.py": "de0801cae045514a5d36dc0409abfc1e4da3021c742481dfad8682900e969fd7",
+    "code/main.py": "d54e23ed24ad34e04f129ddfcbda0c32ecf09ba29bf2f6471c0f8b039721643a",
+    "code/model.py": "0050fd73f608ed5842095bde1ca196d4d874580a9596567b9e89b7b752ad02f2",
+    "code/prepare_kuairand.py": "3d6d8c7ff5756cd76b3f28ca913a2f6cca4fbbb11c339cd01529c53ce367a631",
+    "code/research_common.py": "b14f172ce3276e12c9bbc528745f38397d00decf149f6dfd91d857cb284d297a",
+    "code/research_data.py": "da4b1594cf914f153fdd8e07210b09b3c27a3497fa8d0c0295c32e95eb55d48d",
+    "code/research_evaluation.py": "87b078f56dc450dc20fb1b01a1c1e11abc3a8e74cc11019d24f96f532a7ca852",
+    "code/research_sampling.py": "99f026b7f54e53ee5bbfe71e20efd8ae547d1dc70922b86719053670e58665bb",
+    "code/utils.py": "179a71a11f723c82a6023636dd7e538a68980647e0bb340502f9a8decb1e3e47",
+    "code/world.py": "819939356976f46a47413fb98173acdf91ff9ee73c7035a6ff8055b367b1a751",
+    "scripts/evaluate_stage1.py": "7962eac1bfa8e89047bf2f2b1efe8b240565e610508acf500a63d2645c0d66be",
+    "scripts/package_project.py": "0c1aefc59187f341fba16834275be18f467a12c5b1b832b05d2a1ee69e1c53d3",
+    "scripts/run_stage1.py": "06d7f28c4d87d24245355d9f57331de726af5a43f7b5cd4801a1b8cb66c49f4f",
+    "scripts/summarize_stage1.py": "cd05a3cf88a14b3285d13f00b08b7ea91a8ffc8df9b216e5edc4a2053f18d761"
+  },
+  "driver_sha256": {
+    "analysis/baseline_calibration_20261016/itemcf.py": "ddde7be9268878e4d93aa2f40016cb06b38240c700a34906f5b714c5d32dddf7",
+    "analysis/baseline_calibration_20261016/public_evaluation.py": "3846eeb0b5d6e8f40aa7453c9db09f24b753eb731ad0e924e0bf8731a4f67c5b",
+    "analysis/baseline_calibration_20261016/public_protocol.py": "08d8e7ff99cb246c584667543bf73ccc833ada6ae3dcd8885311560134ded5ae",
+    "analysis/baseline_calibration_20261016/public_run.py": "428eb993d865e8810c8138e00be7768d4b5140389ede64c241a290d07cdfb0bc",
+    "analysis/baseline_calibration_20261016/run_study.py": "e748593ff414e13b9344b335182b897226724cca8e7a5484d6c305036465c9c6",
+    "analysis/baseline_calibration_20261016/shared.py": "dec5f4aafce8afa8bcfe6f08ac6080cb422d7794ead3f4bd0055bb475d7eb55f",
+    "analysis/baseline_calibration_20261016/test_baselines.py": "2ba3824030a1f827ae693ae3e98d1fbdf1c97dc24370549547ecd2b4c6479c8a",
+    "analysis/stage1_beta_replication_20261016/replicate.py": "045332fa90baa89fc76360787eb60350eee73e911a6c7516249c3cbe5c59bb94"
+  },
+  "reference_sha256": {
+    "runs/stage1_beta_pilot_20261015/uniform-seed2020/metadata.json": "067bfea6a96a0fe8cd47fba24ebf486b6eb962435a76f198c859cedd66df5572",
+    "runs/stage1_beta_pilot_20261015/uniform-seed2020/metrics.jsonl": "b4ca19b5907ab8f4220f0fb17269027559f1358f668b4dd6d6070cb206d4453b",
+    "runs/stage1_beta_pilot_20261015/uniform-seed2020/completion.json": "2fd620cca62dd3b3c27181c7837337489d4951aeefb68b4b61bdc8eeb4f522c7",
+    "runs/stage1_beta_pilot_20261015/uniform-seed2020/last.pt": "78e49ddb0c61df5277f7553e92e8f5fd680a4d0f7da4585ed4af282f20ab9d6d",
+    "runs/stage1_beta_pilot_20261015/uniform-seed2020/best_val.pt": "3280950e13ac74a31d86c2d44a4fec3dfdd72ce3dd69f40c9a085a250d362fe0",
+    "runs/stage1_beta_replication_20261016/seed2021/uniform-seed2021/metadata.json": "36894520fd80fb25b0e875147ac9ed40e045017fd13bf55644c07589e69096d1",
+    "runs/stage1_beta_replication_20261016/seed2021/uniform-seed2021/metrics.jsonl": "e557538617ba166a1e6ae8fcd25dd2d51d912b849c66754703bc40c8208688c0",
+    "runs/stage1_beta_replication_20261016/seed2021/uniform-seed2021/completion.json": "7603919614a9aecf2515d874cc02d529767f89d01babc544a73e24c399a9f5c2",
+    "runs/stage1_beta_replication_20261016/seed2021/uniform-seed2021/last.pt": "664d1a331e12604b262b28fcfccda9f21746b8dcd4b1ae5b3b5354e064e45681",
+    "runs/stage1_beta_replication_20261016/seed2021/uniform-seed2021/best_val.pt": "72cd3e7c354b94e397f5e12cfd195bbb0fdd32de5ad21ad9d5c16283b2e30a36",
+    "runs/stage1_beta_replication_20261016/seed2022/uniform-seed2022/metadata.json": "630c01e2283eff261acc758c6c612824dd702f83113347a858f4e1f12507d36e",
+    "runs/stage1_beta_replication_20261016/seed2022/uniform-seed2022/metrics.jsonl": "4bca6a0d326930260b4664e54e93856fbd10c8c936888f7d3a0c0830149ce7f9",
+    "runs/stage1_beta_replication_20261016/seed2022/uniform-seed2022/completion.json": "3e464f71c1dde242d989bd300c5a58e4a66ba6c2f12b04a128e3f99260bf1703",
+    "runs/stage1_beta_replication_20261016/seed2022/uniform-seed2022/last.pt": "10fb50589557d5603bc42d5b4a6adb8fc84d7052e662125e167032990ecf9f74",
+    "runs/stage1_beta_replication_20261016/seed2022/uniform-seed2022/best_val.pt": "dcd2b6017c7d47f6bfefd2131f5372466f4093adc80f8f8c4ecaff0836cd8272"
+  },
+  "dataset_manifest_sha256": "99601459915dbdde342261197d544d6d1186ad4037b8ed80dc601c9ea2e5870f",
+  "author_provenance_sha256": "cd106b798e17ea1e02b617a1b1750c912ae896ff2eb3c18282cd8822b6939184",
+  "public_protocol_audit_sha256": "e2f752997e1ef1cae86504a196ebe42359c8408ff300c8a922cd23fbb22d44bd",
+  "current_protocol_test_evaluated": false
+}

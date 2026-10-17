@@ -1,0 +1,1690 @@
+{
+  "native_engagement": {
+    "random": {
+      "available_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 10005,
+              "precision": [
+                0.0012543728135932073
+              ],
+              "recall": [
+                0.008656297716549707
+              ],
+              "ndcg": [
+                0.004048910193005097
+              ]
+            },
+            "user_sparse": {
+              "users": 1843,
+              "precision": [
+                0.0007053716766142163
+              ],
+              "recall": [
+                0.007721329005276801
+              ],
+              "ndcg": [
+                0.0028286459525515293
+              ]
+            },
+            "item_tail": {
+              "users": 5833,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "user_active": {
+              "users": 3214,
+              "precision": [
+                0.0017890479153702516
+              ],
+              "recall": [
+                0.009182779392112995
+              ],
+              "ndcg": [
+                0.004736275382779978
+              ]
+            },
+            "item_head": {
+              "users": 8061,
+              "precision": [
+                0.001556878799156437
+              ],
+              "recall": [
+                0.013158640561974628
+              ],
+              "ndcg": [
+                0.005913354941141864
+              ]
+            },
+            "user_middle": {
+              "users": 4948,
+              "precision": [
+                0.0011115602263540802
+              ],
+              "recall": [
+                0.008662569994159952
+              ],
+              "ndcg": [
+                0.004056944808045411
+              ]
+            },
+            "item_zero_degree": {
+              "users": 232,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 6.0,
+            "user_degree_q75": 25.0,
+            "positive_item_degree_median": 14.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0012328483468730458,
+          "recall20": 0.0026450878902038993
+        }
+      },
+      "common_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9916,
+              "precision": [
+                0.0012656313029447395
+              ],
+              "recall": [
+                0.008733991393110107
+              ],
+              "ndcg": [
+                0.004085250754438887
+              ]
+            },
+            "user_sparse": {
+              "users": 1813,
+              "precision": [
+                0.0007170435741864316
+              ],
+              "recall": [
+                0.00784909506714018
+              ],
+              "ndcg": [
+                0.002875452008026734
+              ]
+            },
+            "item_tail": {
+              "users": 5783,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "user_active": {
+              "users": 3191,
+              "precision": [
+                0.0018019429645879
+              ],
+              "recall": [
+                0.00924896677099692
+              ],
+              "ndcg": [
+                0.004770413375197383
+              ]
+            },
+            "item_head": {
+              "users": 8007,
+              "precision": [
+                0.0015673785437742022
+              ],
+              "recall": [
+                0.01324738373549113
+              ],
+              "ndcg": [
+                0.005953235191775267
+              ]
+            },
+            "user_middle": {
+              "users": 4912,
+              "precision": [
+                0.0011197068403908772
+              ],
+              "recall": [
+                0.00872605788499663
+              ],
+              "ndcg": [
+                0.004086678116899164
+              ]
+            },
+            "item_zero_degree": {
+              "users": 230,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 6.0,
+            "user_degree_q75": 25.0,
+            "positive_item_degree_median": 14.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.001234826950597499,
+          "recall20": 0.0026451008826109913
+        }
+      }
+    },
+    "all": {
+      "available_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 16482,
+              "precision": [
+                0.007893459531609994
+              ],
+              "recall": [
+                0.04763476550953904
+              ],
+              "ndcg": [
+                0.025986515647160056
+              ]
+            },
+            "user_sparse": {
+              "users": 3008,
+              "precision": [
+                0.006931515957446849
+              ],
+              "recall": [
+                0.055262954686985444
+              ],
+              "ndcg": [
+                0.028851655141171873
+              ]
+            },
+            "item_tail": {
+              "users": 6536,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "item_head": {
+              "users": 15378,
+              "precision": [
+                0.008460137859279225
+              ],
+              "recall": [
+                0.05681021215993988
+              ],
+              "ndcg": [
+                0.030053995600946404
+              ]
+            },
+            "user_active": {
+              "users": 5116,
+              "precision": [
+                0.009089132134480019
+              ],
+              "recall": [
+                0.03985913720061762
+              ],
+              "ndcg": [
+                0.023458900853651796
+              ]
+            },
+            "user_middle": {
+              "users": 8358,
+              "precision": [
+                0.007507776980138667
+              ],
+              "recall": [
+                0.04964894610091025
+              ],
+              "ndcg": [
+                0.02650254073517144
+              ]
+            },
+            "item_zero_degree": {
+              "users": 238,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 6.0,
+            "user_degree_q75": 25.0,
+            "positive_item_degree_median": 14.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0013139633408355477,
+          "recall20": 0.0026449357036147946
+        }
+      },
+      "common_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9916,
+              "precision": [
+                0.007820693828156344
+              ],
+              "recall": [
+                0.030776939530123712
+              ],
+              "ndcg": [
+                0.019811551717138266
+              ]
+            },
+            "user_sparse": {
+              "users": 1813,
+              "precision": [
+                0.005984555984555992
+              ],
+              "recall": [
+                0.029716538795486188
+              ],
+              "ndcg": [
+                0.019109477085119845
+              ]
+            },
+            "item_tail": {
+              "users": 5957,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "item_head": {
+              "users": 9003,
+              "precision": [
+                0.008613795401532634
+              ],
+              "recall": [
+                0.04297970763067596
+              ],
+              "ndcg": [
+                0.025332133553396124
+              ]
+            },
+            "user_active": {
+              "users": 3191,
+              "precision": [
+                0.009902851770604904
+              ],
+              "recall": [
+                0.03172743635342012
+              ],
+              "ndcg": [
+                0.02098653996835082
+              ]
+            },
+            "user_middle": {
+              "users": 4912,
+              "precision": [
+                0.007145765472312734
+              ],
+              "recall": [
+                0.030550854670343543
+              ],
+              "ndcg": [
+                0.019307372930132956
+              ]
+            },
+            "item_zero_degree": {
+              "users": 231,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 6.0,
+            "user_degree_q75": 25.0,
+            "positive_item_degree_median": 14.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0014380668054499936,
+          "recall20": 0.0026451008826109913
+        }
+      }
+    }
+  },
+  "native_click": {
+    "random": {
+      "available_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 14210,
+              "precision": [
+                0.0012702322308233722
+              ],
+              "recall": [
+                0.006162799610873708
+              ],
+              "ndcg": [
+                0.0031904431717650647
+              ]
+            },
+            "user_sparse": {
+              "users": 3303,
+              "precision": [
+                0.0007568876778686041
+              ],
+              "recall": [
+                0.006152999299779737
+              ],
+              "ndcg": [
+                0.0027734635609021167
+              ]
+            },
+            "item_tail": {
+              "users": 9680,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "user_active": {
+              "users": 4131,
+              "precision": [
+                0.0018760590656015448
+              ],
+              "recall": [
+                0.00657048741596557
+              ],
+              "ndcg": [
+                0.003715998753870701
+              ]
+            },
+            "item_head": {
+              "users": 11619,
+              "precision": [
+                0.0015534899733195729
+              ],
+              "recall": [
+                0.01049784571702439
+              ],
+              "ndcg": [
+                0.004866941860074403
+              ]
+            },
+            "user_middle": {
+              "users": 6776,
+              "precision": [
+                0.0011511216056670573
+              ],
+              "recall": [
+                0.005919029260328973
+              ],
+              "ndcg": [
+                0.0030732964104017153
+              ]
+            },
+            "item_zero_degree": {
+              "users": 63,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 9.0,
+            "user_degree_q75": 34.0,
+            "positive_item_degree_median": 22.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0013834995319543688,
+          "recall20": 0.0026471109989114967
+        }
+      },
+      "common_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9916,
+              "precision": [
+                0.001669019766034701
+              ],
+              "recall": [
+                0.007032682622349123
+              ],
+              "ndcg": [
+                0.0038871372740223223
+              ]
+            },
+            "user_sparse": {
+              "users": 1926,
+              "precision": [
+                0.0009865005192108002
+              ],
+              "recall": [
+                0.0067445604121698565
+              ],
+              "ndcg": [
+                0.003054523263856631
+              ]
+            },
+            "item_tail": {
+              "users": 7403,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "user_active": {
+              "users": 3180,
+              "precision": [
+                0.0023899371069182333
+              ],
+              "recall": [
+                0.007749271545708732
+              ],
+              "ndcg": [
+                0.004594889935912933
+              ]
+            },
+            "item_head": {
+              "users": 8795,
+              "precision": [
+                0.0018817509948834675
+              ],
+              "recall": [
+                0.011555612534763988
+              ],
+              "ndcg": [
+                0.005567368329711055
+              ]
+            },
+            "user_middle": {
+              "users": 4810,
+              "precision": [
+                0.0014656964656964621
+              ],
+              "recall": [
+                0.0066742981318130635
+              ],
+              "ndcg": [
+                0.0037526177560944624
+              ]
+            },
+            "item_zero_degree": {
+              "users": 54,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 9.0,
+            "user_degree_q75": 34.0,
+            "positive_item_degree_median": 22.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0015345404949720601,
+          "recall20": 0.0026478121149919086
+        }
+      }
+    },
+    "all": {
+      "available_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 19881,
+              "precision": [
+                0.008691715708465502
+              ],
+              "recall": [
+                0.03853531330817413
+              ],
+              "ndcg": [
+                0.024033334002262815
+              ]
+            },
+            "user_sparse": {
+              "users": 4575,
+              "precision": [
+                0.006666666666666719
+              ],
+              "recall": [
+                0.04214732335335186
+              ],
+              "ndcg": [
+                0.025976215990024906
+              ]
+            },
+            "item_tail": {
+              "users": 10564,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "item_head": {
+              "users": 18577,
+              "precision": [
+                0.009301824837164378
+              ],
+              "recall": [
+                0.048075585337753655
+              ],
+              "ndcg": [
+                0.028385350079302957
+              ]
+            },
+            "user_active": {
+              "users": 5644,
+              "precision": [
+                0.01085223245924861
+              ],
+              "recall": [
+                0.034111218111371876
+              ],
+              "ndcg": [
+                0.02271877993774649
+              ]
+            },
+            "user_middle": {
+              "users": 9662,
+              "precision": [
+                0.008388532394949095
+              ],
+              "recall": [
+                0.039409319449145226
+              ],
+              "ndcg": [
+                0.02388125969529896
+              ]
+            },
+            "item_zero_degree": {
+              "users": 63,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 9.0,
+            "user_degree_q75": 34.0,
+            "positive_item_degree_median": 22.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0014901296050137862,
+          "recall20": 0.002646978433871656
+        }
+      },
+      "common_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9916,
+              "precision": [
+                0.009963695038321637
+              ],
+              "recall": [
+                0.025994307984564213
+              ],
+              "ndcg": [
+                0.019778112133829552
+              ]
+            },
+            "user_sparse": {
+              "users": 1926,
+              "precision": [
+                0.007268951194184867
+              ],
+              "recall": [
+                0.02446147103216368
+              ],
+              "ndcg": [
+                0.018111660945889466
+              ]
+            },
+            "item_tail": {
+              "users": 7557,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "item_head": {
+              "users": 9440,
+              "precision": [
+                0.010466101694914975
+              ],
+              "recall": [
+                0.036683911801375556
+              ],
+              "ndcg": [
+                0.024495751489996352
+              ]
+            },
+            "user_active": {
+              "users": 3180,
+              "precision": [
+                0.012641509433962252
+              ],
+              "recall": [
+                0.026943882728976836
+              ],
+              "ndcg": [
+                0.021419687612462567
+              ]
+            },
+            "user_middle": {
+              "users": 4810,
+              "precision": [
+                0.009272349272349226
+              ],
+              "recall": [
+                0.02598029473780588
+              ],
+              "ndcg": [
+                0.019360102771234813
+              ]
+            },
+            "item_zero_degree": {
+              "users": 54,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 9.0,
+            "user_degree_q75": 34.0,
+            "positive_item_degree_median": 22.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0017694046711986737,
+          "recall20": 0.0026478121149919086
+        }
+      }
+    }
+  },
+  "common_engagement": {
+    "random": {
+      "available_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9999,
+              "precision": [
+                0.001255125512551259
+              ],
+              "recall": [
+                0.008661492014609444
+              ],
+              "ndcg": [
+                0.004051339782079808
+              ]
+            },
+            "user_sparse": {
+              "users": 1838,
+              "precision": [
+                0.0007072905331882484
+              ],
+              "recall": [
+                0.007742333708773202
+              ],
+              "ndcg": [
+                0.0028363408544899178
+              ]
+            },
+            "item_tail": {
+              "users": 5832,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "user_active": {
+              "users": 3214,
+              "precision": [
+                0.0017890479153702516
+              ],
+              "recall": [
+                0.009182779392112995
+              ],
+              "ndcg": [
+                0.004736275382779978
+              ]
+            },
+            "item_head": {
+              "users": 8056,
+              "precision": [
+                0.0015578450844091407
+              ],
+              "recall": [
+                0.013166807543455495
+              ],
+              "ndcg": [
+                0.005917025096889842
+              ]
+            },
+            "user_middle": {
+              "users": 4947,
+              "precision": [
+                0.001111784920153626
+              ],
+              "recall": [
+                0.008664321069558004
+              ],
+              "ndcg": [
+                0.004057764889874407
+              ]
+            },
+            "item_zero_degree": {
+              "users": 232,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 6.0,
+            "user_degree_q75": 25.0,
+            "positive_item_degree_median": 14.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0012329280623056774,
+          "recall20": 0.0026450914109291328
+        }
+      },
+      "common_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9916,
+              "precision": [
+                0.0012656313029447395
+              ],
+              "recall": [
+                0.008733991393110107
+              ],
+              "ndcg": [
+                0.004085250754438887
+              ]
+            },
+            "user_sparse": {
+              "users": 1813,
+              "precision": [
+                0.0007170435741864316
+              ],
+              "recall": [
+                0.00784909506714018
+              ],
+              "ndcg": [
+                0.002875452008026734
+              ]
+            },
+            "item_tail": {
+              "users": 5786,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "user_active": {
+              "users": 3191,
+              "precision": [
+                0.0018019429645879
+              ],
+              "recall": [
+                0.00924896677099692
+              ],
+              "ndcg": [
+                0.004770413375197383
+              ]
+            },
+            "item_head": {
+              "users": 8006,
+              "precision": [
+                0.0015675743192605594
+              ],
+              "recall": [
+                0.0132490384174466
+              ],
+              "ndcg": [
+                0.005953978788476713
+              ]
+            },
+            "user_middle": {
+              "users": 4912,
+              "precision": [
+                0.0011197068403908772
+              ],
+              "recall": [
+                0.00872605788499663
+              ],
+              "ndcg": [
+                0.004086678116899164
+              ]
+            },
+            "item_zero_degree": {
+              "users": 230,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 6.0,
+            "user_degree_q75": 25.0,
+            "positive_item_degree_median": 14.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.001234826950597499,
+          "recall20": 0.0026451008826109913
+        }
+      }
+    },
+    "all": {
+      "available_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 16473,
+              "precision": [
+                0.007897772111940505
+              ],
+              "recall": [
+                0.04766079069557594
+              ],
+              "ndcg": [
+                0.026000713342833246
+              ]
+            },
+            "user_sparse": {
+              "users": 3000,
+              "precision": [
+                0.00695000000000004
+              ],
+              "recall": [
+                0.05541032256615074
+              ],
+              "ndcg": [
+                0.028928592888214998
+              ]
+            },
+            "item_tail": {
+              "users": 6537,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "item_head": {
+              "users": 15370,
+              "precision": [
+                0.00846454131424827
+              ],
+              "recall": [
+                0.05684074080580996
+              ],
+              "ndcg": [
+                0.030070359321972856
+              ]
+            },
+            "user_active": {
+              "users": 5116,
+              "precision": [
+                0.009089132134480019
+              ],
+              "recall": [
+                0.03985913720061762
+              ],
+              "ndcg": [
+                0.023458900853651796
+              ]
+            },
+            "user_middle": {
+              "users": 8357,
+              "precision": [
+                0.007508675361971877
+              ],
+              "recall": [
+                0.04965488710199927
+              ],
+              "ndcg": [
+                0.0265057120335722
+              ]
+            },
+            "item_zero_degree": {
+              "users": 238,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 6.0,
+            "user_degree_q75": 25.0,
+            "positive_item_degree_median": 14.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0013140561694201087,
+          "recall20": 0.002644938995457739
+        }
+      },
+      "common_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9916,
+              "precision": [
+                0.007820693828156344
+              ],
+              "recall": [
+                0.030776939530123712
+              ],
+              "ndcg": [
+                0.019811551717138266
+              ]
+            },
+            "user_sparse": {
+              "users": 1813,
+              "precision": [
+                0.005984555984555992
+              ],
+              "recall": [
+                0.029716538795486188
+              ],
+              "ndcg": [
+                0.019109477085119845
+              ]
+            },
+            "item_tail": {
+              "users": 5960,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "item_head": {
+              "users": 9002,
+              "precision": [
+                0.008614752277271528
+              ],
+              "recall": [
+                0.042986119905434265
+              ],
+              "ndcg": [
+                0.025336178272449945
+              ]
+            },
+            "user_active": {
+              "users": 3191,
+              "precision": [
+                0.009902851770604904
+              ],
+              "recall": [
+                0.03172743635342012
+              ],
+              "ndcg": [
+                0.02098653996835082
+              ]
+            },
+            "user_middle": {
+              "users": 4912,
+              "precision": [
+                0.007145765472312734
+              ],
+              "recall": [
+                0.030550854670343543
+              ],
+              "ndcg": [
+                0.019307372930132956
+              ]
+            },
+            "item_zero_degree": {
+              "users": 231,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 6.0,
+            "user_degree_q75": 25.0,
+            "positive_item_degree_median": 14.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0014380668054499936,
+          "recall20": 0.0026451008826109913
+        }
+      }
+    }
+  },
+  "common_click": {
+    "random": {
+      "available_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 13835,
+              "precision": [
+                0.001286591976870265
+              ],
+              "recall": [
+                0.006175386896177134
+              ],
+              "ndcg": [
+                0.0032000916372278776
+              ]
+            },
+            "user_sparse": {
+              "users": 2929,
+              "precision": [
+                0.0007511095937179925
+              ],
+              "recall": [
+                0.00618471265067912
+              ],
+              "ndcg": [
+                0.002750477890926413
+              ]
+            },
+            "item_tail": {
+              "users": 9466,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "user_active": {
+              "users": 3939,
+              "precision": [
+                0.001916730134551912
+              ],
+              "recall": [
+                0.00680848687263266
+              ],
+              "ndcg": [
+                0.0038305536347464303
+              ]
+            },
+            "item_head": {
+              "users": 11324,
+              "precision": [
+                0.0015718827269516173
+              ],
+              "recall": [
+                0.010554511724010972
+              ],
+              "ndcg": [
+                0.00488238429074231
+              ]
+            },
+            "user_middle": {
+              "users": 6967,
+              "precision": [
+                0.0011554471077938825
+              ],
+              "recall": [
+                0.005813524409856669
+              ],
+              "ndcg": [
+                0.003032663598572991
+              ]
+            },
+            "item_zero_degree": {
+              "users": 68,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 9.0,
+            "user_degree_q75": 35.0,
+            "positive_item_degree_median": 22.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0013890995533293795,
+          "recall20": 0.0026473442695048107
+        }
+      },
+      "common_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9916,
+              "precision": [
+                0.0016740621218233258
+              ],
+              "recall": [
+                0.007039885987761443
+              ],
+              "ndcg": [
+                0.003888904344427691
+              ]
+            },
+            "user_sparse": {
+              "users": 1926,
+              "precision": [
+                0.0009865005192108002
+              ],
+              "recall": [
+                0.0067445604121698565
+              ],
+              "ndcg": [
+                0.003052124018348028
+              ]
+            },
+            "item_tail": {
+              "users": 7419,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "user_active": {
+              "users": 3040,
+              "precision": [
+                0.002434210526315784
+              ],
+              "recall": [
+                0.007999549273453962
+              ],
+              "ndcg": [
+                0.004716297612461632
+              ]
+            },
+            "item_head": {
+              "users": 8785,
+              "precision": [
+                0.001889584519066602
+              ],
+              "recall": [
+                0.011590129853466165
+              ],
+              "ndcg": [
+                0.005583051316895991
+              ]
+            },
+            "user_middle": {
+              "users": 4950,
+              "precision": [
+                0.0014747474747474711
+              ],
+              "recall": [
+                0.006565425517071343
+              ],
+              "ndcg": [
+                0.0037063514905299657
+              ]
+            },
+            "item_zero_degree": {
+              "users": 60,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 9.0,
+            "user_degree_q75": 35.0,
+            "positive_item_degree_median": 22.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0015345404949720601,
+          "recall20": 0.0026478121149919086
+        }
+      }
+    },
+    "all": {
+      "available_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 19360,
+              "precision": [
+                0.008786157024793505
+              ],
+              "recall": [
+                0.03861595003733792
+              ],
+              "ndcg": [
+                0.024071382025873066
+              ]
+            },
+            "user_sparse": {
+              "users": 4056,
+              "precision": [
+                0.006841715976331411
+              ],
+              "recall": [
+                0.04298655603547219
+              ],
+              "ndcg": [
+                0.02657920734037445
+              ]
+            },
+            "item_tail": {
+              "users": 10338,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "item_head": {
+              "users": 18128,
+              "precision": [
+                0.009383274492497918
+              ],
+              "recall": [
+                0.048235468528737765
+              ],
+              "ndcg": [
+                0.028414432455057783
+              ]
+            },
+            "user_active": {
+              "users": 5380,
+              "precision": [
+                0.010724907063196891
+              ],
+              "recall": [
+                0.03398976233202672
+              ],
+              "ndcg": [
+                0.022606282319962367
+              ]
+            },
+            "user_middle": {
+              "users": 9924,
+              "precision": [
+                0.008529826682788998
+              ],
+              "recall": [
+                0.03933760581385353
+              ],
+              "ndcg": [
+                0.023840678372323995
+              ]
+            },
+            "item_zero_degree": {
+              "users": 68,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 9.0,
+            "user_degree_q75": 35.0,
+            "positive_item_degree_median": 22.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0014977187811625887,
+          "recall20": 0.0026472063699804873
+        }
+      },
+      "common_users": {
+        "popularity": {
+          "split": "val",
+          "topks": [
+            20
+          ],
+          "groups": {
+            "overall": {
+              "users": 9916,
+              "precision": [
+                0.009973779749898885
+              ],
+              "recall": [
+                0.026014957632079536
+              ],
+              "ndcg": [
+                0.01975559689348873
+              ]
+            },
+            "user_sparse": {
+              "users": 1926,
+              "precision": [
+                0.007268951194184867
+              ],
+              "recall": [
+                0.02446147103216368
+              ],
+              "ndcg": [
+                0.018081751653287265
+              ]
+            },
+            "item_tail": {
+              "users": 7576,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            },
+            "item_head": {
+              "users": 9435,
+              "precision": [
+                0.010482246952834907
+              ],
+              "recall": [
+                0.036910895094884676
+              ],
+              "ndcg": [
+                0.02454003443167553
+              ]
+            },
+            "user_active": {
+              "users": 3040,
+              "precision": [
+                0.01258223684210528
+              ],
+              "recall": [
+                0.026758530832013905
+              ],
+              "ndcg": [
+                0.021207792773927904
+              ]
+            },
+            "user_middle": {
+              "users": 4950,
+              "precision": [
+                0.00942424242424236
+              ],
+              "recall": [
+                0.02616274604897621
+              ],
+              "ndcg": [
+                0.01951502122805289
+              ]
+            },
+            "item_zero_degree": {
+              "users": 60,
+              "precision": [
+                0.0
+              ],
+              "recall": [
+                0.0
+              ],
+              "ndcg": [
+                0.0
+              ]
+            }
+          },
+          "group_definition": {
+            "user_degree_q25": 9.0,
+            "user_degree_q75": 35.0,
+            "positive_item_degree_median": 22.0,
+            "item_metrics": "subset ground truth within global ranking"
+          }
+        },
+        "uniform_expected": {
+          "ndcg20": 0.0017694046711986737,
+          "recall20": 0.0026478121149919086
+        }
+      }
+    }
+  }
+}

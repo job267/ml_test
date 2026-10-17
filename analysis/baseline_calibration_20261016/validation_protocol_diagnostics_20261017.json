@@ -1,0 +1,56 @@
+{
+  "scope": "Validation-only descriptive protocol diagnosis; no model training, no test evaluation or parameter selection. Local popularity/random formulas checked against existing frozen references.",
+  "protocols": [
+    {
+      "protocol": "local_engagement_random",
+      "split": "validation",
+      "train_pairs": 451741,
+      "val_users": 10005,
+      "val_pairs": 30593,
+      "items": 7583,
+      "mean_train_degree_per_user": 18.42036372533029,
+      "popularity_ndcg20": 0.004048910193005097,
+      "popularity_recall20": 0.008656297716549698,
+      "uniform_expected_ndcg20": 0.0012328483468730456,
+      "uniform_expected_recall20": 0.0026450878902038993,
+      "train_item_positive_median_degree": 14.0,
+      "val_targets_tail_fraction_by_own_median": 0.36263197463472036,
+      "val_targets_positive_degree_1_to_14_fraction": 0.36263197463472036,
+      "val_targets_zero_degree_fraction": 0.007812244631124767,
+      "val_targets_median_train_item_degree": 26.0
+    },
+    {
+      "protocol": "author_click",
+      "split": "validation",
+      "train_pairs": 496142,
+      "val_users": 18621,
+      "val_pairs": 63291,
+      "items": 7076,
+      "mean_train_degree_per_user": 22.42145697758496,
+      "popularity_ndcg20": 0.04057195281158005,
+      "popularity_recall20": 0.07041943045672143,
+      "uniform_expected_ndcg20": 0.001392483812774508,
+      "uniform_expected_recall20": 0.0028360995196516662,
+      "train_item_positive_median_degree": 15.0,
+      "val_targets_tail_fraction_by_own_median": 0.060608933339653344,
+      "val_targets_positive_degree_1_to_14_fraction": 0.05632712391967262,
+      "val_targets_zero_degree_fraction": 0.0,
+      "val_targets_median_train_item_degree": 200.0
+    }
+  ],
+  "created_beijing": "2026-10-17T14:31:50.821633+08:00",
+  "data_fingerprints": {
+    "current_manifest_sha256": "99601459915dbdde342261197d544d6d1186ad4037b8ed80dc601c9ea2e5870f",
+    "author_training_sha256": "9117d185de8330a65d2f89a8c04401d1b56374f89298717033cdff79ccde287d",
+    "author_validation_sha256": "6403cabf5bbb45d1d4447e57ebb88805d666a9396947459f55c4a03f028634c4"
+  },
+  "metric_definitions": {
+    "k": 20,
+    "candidate_set": "all declared items excluding unique training positives for each validation user",
+    "popularity": "unique training-positive user count, descending; ascending item ID for ties",
+    "macro_ndcg": "per-user DCG / IDCG(min(relevant_count,20)); mean across validation users",
+    "uniform_expectation": "E[DCG]=(relevant_count/legal_candidates)*sum(j=1..20,1/log2(j+1)); divide by per-user IDCG",
+    "low_degree_target": "positive train item degree between 1 and 14, same threshold in both protocols",
+    "units": "target fractions count user-item pairs; popularity baseline is deterministic, no seed standard deviation"
+  }
+}

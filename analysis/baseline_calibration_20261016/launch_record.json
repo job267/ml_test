@@ -1,0 +1,18 @@
+{
+  "launcher_pid": 2716369,
+  "command": [
+    "conda",
+    "run",
+    "--no-capture-output",
+    "-n",
+    "gcn",
+    "python",
+    "-u",
+    "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/analysis/baseline_calibration_20261016/run_study.py"
+  ],
+  "log": "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/runs/baseline_calibration_20261016.launch.log",
+  "cuda_visible_devices": "0",
+  "cuda_device_order": "PCI_BUS_ID",
+  "tests": "29 passed; GPU0 sparse scoring checked",
+  "launched_unix": 1792151661.6666365
+}

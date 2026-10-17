@@ -18,3 +18,11 @@ environment*.txt
 .env
 .env.*
 !.env.example
+
+# Locally restored third-party data/code and historical comparison checkout.
+/external/
+/analysis/upstream_*/
+*.npy
+*.npz
+*.sqlite
+*.sqlite3

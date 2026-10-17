@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "seeds": [2020, 2021, 2022],
+  "rates": [0.2, 0.4],
+  "training": {
+    "model": "lgn", "recdim": 64, "layer": 3,
+    "lr": 0.001, "decay": 0.0001, "epochs": 30,
+    "candidate_size": 20, "evidence_fraction": 0.5,
+    "weak_confidence": 0.2, "unknown_confidence": 0.05,
+    "temperature": 1.0, "targeted_rate": 0.8,
+    "curriculum_epochs": 100, "score_batch": 8192,
+    "bpr_batch": 2048, "test_batch": 100,
+    "samples_per_epoch": 0, "eval_interval": 1, "topks": "[20]"
+  },
+  "reference_runs": {
+    "2020": {
+      "uniform": "runs/stage1_beta_pilot_20261015/uniform-seed2020",
+      "rate08": "runs/stage1_beta_pilot_20261015/beta0-seed2020"
+    },
+    "2021": {
+      "uniform": "runs/stage1_beta_replication_20261016/seed2021/uniform-seed2021",
+      "rate08": "runs/stage1_beta_replication_20261016/seed2021/beta0-seed2021"
+    },
+    "2022": {
+      "uniform": "runs/stage1_beta_replication_20261016/seed2022/uniform-seed2022",
+      "rate08": "runs/stage1_beta_replication_20261016/seed2022/beta0-seed2022"
+    }
+  },
+  "selection": "For each run, select the highest validation NDCG@20 within epochs 1-30; all subgroup metrics use that same epoch.",
+  "interpretation": "Exploratory rate ablation on reused validation data/seeds. Compare overall and sparse-user NDCG separately; no composite score or significance claim. Do not evaluate test."
+}

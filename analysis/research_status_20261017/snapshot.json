@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-17T07:21:17.439792+00:00",
+  "captured_beijing": "2026-10-17T15:21:17.439792+08:00",
+  "kind": "Static publication snapshot; not a live monitor or resumable checkpoint",
+  "repository": "https://github.com/job267/ml_test",
+  "remote_parent_commit_at_review": "212bfb35147ef913c40fb44c390672a6e666ae77",
+  "environment": {
+    "conda": "gcn",
+    "torch": "2.6.0+cu126",
+    "physical_gpu": 0,
+    "own_gpu_jobs": "serial"
+  },
+  "tests": {
+    "passed": 47,
+    "seconds": 4.07,
+    "device": "CPU; CUDA_VISIBLE_DEVICES empty",
+    "scope": "Core tests and every new study test module through protocol_alignment_20261017"
+  },
+  "queues": {
+    "baseline_calibration_20261016": {
+      "status": "running",
+      "active_stage": "14-public-s2022-lNone-e600",
+      "updated_utc": "2026-10-17T07:21:10.849370+00:00",
+      "finished_stages": [
+        "00-itemcf-sNone-lNone-eNone",
+        "01-public-s2018-lNone-e5",
+        "02-local-s2020-l0-e30",
+        "03-local-s2021-l0-e30",
+        "04-local-s2022-l0-e30",
+        "05-local-s2020-l0-e100",
+        "06-local-s2021-l3-e100",
+        "07-local-s2021-l0-e100",
+        "08-local-s2022-l3-e100",
+        "09-local-s2022-l0-e100",
+        "10-public-s2018-lNone-e600",
+        "11-public-s2019-lNone-e600",
+        "12-public-s2020-lNone-e600",
+        "13-public-s2021-lNone-e600"
+      ],
+      "expected_stages": 15
+    },
+    "protocol_alignment_20261017": {
+      "status": "waiting",
+      "stage": "wait_for_public_completion",
+      "updated_utc": "2026-10-17T07:21:13.011734+00:00",
+      "prerequisite_stage": "14-public-s2022-lNone-e600",
+      "prerequisite_finished_stages": 14
+    }
+  },
+  "public_reproduction": {
+    "completed_seeds": 4,
+    "expected_seeds": 5,
+    "seed2022_status": {
+      "status": "running",
+      "completed_epochs": 279,
+      "updated_utc": "2026-10-17T07:20:24.527900+00:00"
+    },
+    "seed2022_latest_record": {
+      "epoch": 279,
+      "loss_mean_over_batches": 0.02482207249006862,
+      "samples": 496142,
+      "training_seconds": 26.498949627857655,
+      "seconds": 26.49896066985093,
+      "best_epoch": 250,
+      "best_recall10": 0.0786,
+      "patience_count": 6
+    },
+    "aggregate_is_final": false
+  },
+  "cpu_preflight_passed": true,
+  "full_gpu_alignment_completed": false,
+  "current_task_test_evaluated": false,
+  "note": "Completed public-seed tests belong to the separate author split; current engagement/random-exposure test remains isolated.",
+  "artifacts": {
+    "pilot_validation_summary.json": {
+      "source": "runs/stage1_beta_pilot_20261015/validation_summary.json",
+      "bytes": 4231,
+      "sha256": "ab46d8df0ef818534504a665e8720446c5cc36db950a0cbdea5b39f61a7674c8"
+    },
+    "beta_replication_comparison.json": {
+      "source": "runs/stage1_beta_replication_20261016/comparison.json",
+      "bytes": 27511,
+      "sha256": "604df3552aa17b71b0f40a0554e95dda50c8c3c713848c0b213a73db75e6b285"
+    },
+    "targeted_rate_comparison.json": {
+      "source": "runs/stage1_targeted_rate_20261016/comparison.json",
+      "bytes": 32945,
+      "sha256": "69789a3a235bfdb177098c04ebb93864ab8f6417940c618f8a03e82ff02b2ba6"
+    },
+    "candidate_source_comparison.json": {
+      "source": "runs/stage1_candidate_source_20261016/comparison.json",
+      "bytes": 25069,
+      "sha256": "792f5a7820c355b76a59323f0be36c27a12bbb3e2f4998a0d71eb7b0b5c8ec1f"
+    },
+    "baseline_comparison.json": {
+      "source": "runs/baseline_calibration_20261016/comparison.json",
+      "bytes": 33403,
+      "sha256": "8ed953a9065db0ec0f9e3a6a0ee53284c2c7177bb6e8771158fd378a317de198"
+    },
+    "baseline_plan.json": {
+      "source": "runs/baseline_calibration_20261016/plan.json",
+      "bytes": 7864,
+      "sha256": "da48d80d56d7cd7fa3d29ac3fdb9cc97ae3253be78be809744d49d9fa6fc592f"
+    },
+    "cpu_preflight.json": {
+      "source": "runs/protocol_alignment_20261017/cpu_preflight_final/completion.json",
+      "bytes": 6058,
+      "sha256": "2780142417b5c78109b1f41508ce0632d8ea2779e2976b87a3b1a9c7cb78b712"
+    },
+    "factorial_data_manifest.json": {
+      "source": "runs/protocol_alignment_20261017/data/manifest.json",
+      "bytes": 6655,
+      "sha256": "7f32768887cfdb7ea5eb3f7384e3665a08ec3cbc2745c206ac88a643685a55b3"
+    },
+    "factorial_validation_references.json": {
+      "source": "runs/protocol_alignment_20261017/data/validation_references.json",
+      "bytes": 42319,
+      "sha256": "d16724429a6583946b0bb22bf5140d7f26c9c02c782856f96e9c75bf075b4f38"
+    },
+    "sequence_plan.json": {
+      "source": "runs/protocol_alignment_20261017/sequence_plan.json",
+      "bytes": 6020,
+      "sha256": "4d4c67048e3264a921ad82910d2853ce0f5ee9926d9b253db65347602499f1af"
+    }
+  }
+}

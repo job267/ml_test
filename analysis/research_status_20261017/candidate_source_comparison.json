@@ -1,0 +1,1057 @@
+{
+  "updated_utc": "2026-10-16T11:08:29.625355+00:00",
+  "split": "val",
+  "comparison_horizon": 30,
+  "completed_new_runs": 3,
+  "expected_new_runs": 3,
+  "rows": [
+    {
+      "seed": 2020,
+      "variant": "uniform",
+      "role": "existing_reference",
+      "best_epoch": 10,
+      "ndcg20": 0.0043986444256927425,
+      "recall20": 0.009826680877985251,
+      "sparse_ndcg20": 0.004118180012931637,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987647789330611,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.001344327836081964
+          ],
+          "recall": [
+            0.009826680877985251
+          ],
+          "ndcg": [
+            0.0043986444256927425
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0010309278350515468
+          ],
+          "recall": [
+            0.01142216184338582
+          ],
+          "ndcg": [
+            0.004118180012931637
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.001711263223397632
+          ],
+          "recall": [
+            0.009108118419931928
+          ],
+          "ndcg": [
+            0.0048197827476658
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016685274779804059
+          ],
+          "recall": [
+            0.014938513500619683
+          ],
+          "ndcg": [
+            0.006353883275210841
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001222716248989488
+          ],
+          "recall": [
+            0.009699152244385834
+          ],
+          "ndcg": [
+            0.004229557389697862
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004160964752285284,
+      "late_best": false,
+      "weak_negative_fraction": 0.0044959450983330295,
+      "explicit_negative_fraction": 6.640973478165586e-06
+    },
+    {
+      "seed": 2020,
+      "variant": "evidence05",
+      "role": "existing_reference",
+      "best_epoch": 6,
+      "ndcg20": 0.004478226894179184,
+      "recall20": 0.009562591788981573,
+      "sparse_ndcg20": 0.0028981833736709604,
+      "tail_ndcg20": 2.230870621133217e-05,
+      "tail_hit_pairs": 1,
+      "unique_negative_pair_fraction": 0.6908007021722624,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013543228385807153
+          ],
+          "recall": [
+            0.009562591788981573
+          ],
+          "ndcg": [
+            0.004478226894179184
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0006511123168746611
+          ],
+          "recall": [
+            0.007769559547267516
+          ],
+          "ndcg": [
+            0.0028981833736709604
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            8.571918395336878e-06
+          ],
+          "recall": [
+            4.2859591976684385e-05
+          ],
+          "ndcg": [
+            2.230870621133217e-05
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0019757311761045386
+          ],
+          "recall": [
+            0.010826230561764743
+          ],
+          "ndcg": [
+            0.005477683348900591
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016747301823595157
+          ],
+          "recall": [
+            0.014637217806692793
+          ],
+          "ndcg": [
+            0.006527438817861409
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001212611156022633
+          ],
+          "recall": [
+            0.009409645832181629
+          ],
+          "ndcg": [
+            0.0044175492795514686
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.003981867844089476,
+      "late_best": false,
+      "weak_negative_fraction": 0.5348883450791324,
+      "explicit_negative_fraction": 0.0003696808569512176
+    },
+    {
+      "seed": 2021,
+      "variant": "uniform",
+      "role": "existing_reference",
+      "best_epoch": 14,
+      "ndcg20": 0.004508965563327839,
+      "recall20": 0.010046881996844592,
+      "sparse_ndcg20": 0.004523138819799878,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.998835615983495,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013243378310844628
+          ],
+          "recall": [
+            0.010046881996844592
+          ],
+          "ndcg": [
+            0.004508965563327839
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.001085187194791102
+          ],
+          "recall": [
+            0.012615867757656031
+          ],
+          "ndcg": [
+            0.004523138819799878
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017112632233976318
+          ],
+          "recall": [
+            0.009500305300508419
+          ],
+          "ndcg": [
+            0.005200452051492639
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016437166604639686
+          ],
+          "recall": [
+            0.01514448576651007
+          ],
+          "ndcg": [
+            0.006440721462440428
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0011620856911883565
+          ],
+          "recall": [
+            0.009445034127978166
+          ],
+          "ndcg": [
+            0.004054527631913207
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004037929087437374,
+      "late_best": false,
+      "weak_negative_fraction": 0.004464901012512514,
+      "explicit_negative_fraction": 6.640973478165586e-06
+    },
+    {
+      "seed": 2021,
+      "variant": "evidence05",
+      "role": "existing_reference",
+      "best_epoch": 10,
+      "ndcg20": 0.004868470680798622,
+      "recall20": 0.010046361008397198,
+      "sparse_ndcg20": 0.004085410103601584,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.7217653478431225,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0014242878560719707
+          ],
+          "recall": [
+            0.010046361008397198
+          ],
+          "ndcg": [
+            0.004868470680798622
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007596310363537713
+          ],
+          "recall": [
+            0.009200542502938482
+          ],
+          "ndcg": [
+            0.004085410103601584
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0019601742377100143
+          ],
+          "recall": [
+            0.010319156420265596
+          ],
+          "ndcg": [
+            0.0055676138400102245
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0017677707480461564
+          ],
+          "recall": [
+            0.015598934468457617
+          ],
+          "ndcg": [
+            0.007102756562921088
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0013237671786580406
+          ],
+          "recall": [
+            0.010184210452983964
+          ],
+          "ndcg": [
+            0.004706007974668474
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004083571332551717,
+      "late_best": false,
+      "weak_negative_fraction": 0.4987237235670372,
+      "explicit_negative_fraction": 0.0003696808569512176
+    },
+    {
+      "seed": 2022,
+      "variant": "uniform",
+      "role": "existing_reference",
+      "best_epoch": 7,
+      "ndcg20": 0.004558398220062878,
+      "recall20": 0.009942225365537493,
+      "sparse_ndcg20": 0.004342670195890132,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987669925908873,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013843078460769672
+          ],
+          "recall": [
+            0.009942225365537493
+          ],
+          "ndcg": [
+            0.004558398220062878
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0010309278350515468
+          ],
+          "recall": [
+            0.011460918528914074
+          ],
+          "ndcg": [
+            0.004342670195890132
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0018046048537647753
+          ],
+          "recall": [
+            0.009300186323433022
+          ],
+          "ndcg": [
+            0.004942321074090189
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0017181491130132808
+          ],
+          "recall": [
+            0.015037630981575643
+          ],
+          "ndcg": [
+            0.006567681905937731
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0012429264349231987
+          ],
+          "recall": [
+            0.009793591974514996
+          ],
+          "ndcg": [
+            0.004389372087424765
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004122774672422548,
+      "late_best": false,
+      "weak_negative_fraction": 0.0045800876360245655,
+      "explicit_negative_fraction": 2.2136578260551954e-06
+    },
+    {
+      "seed": 2022,
+      "variant": "evidence05",
+      "role": "existing_reference",
+      "best_epoch": 8,
+      "ndcg20": 0.004910373943278463,
+      "recall20": 0.010225046582384283,
+      "sparse_ndcg20": 0.0035681283838880995,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.6976342638812948,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.001409295352323844
+          ],
+          "recall": [
+            0.010225046582384283
+          ],
+          "ndcg": [
+            0.004910373943278463
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007596310363537713
+          ],
+          "recall": [
+            0.008720605547146942
+          ],
+          "ndcg": [
+            0.0035681283838880995
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0019290603609209667
+          ],
+          "recall": [
+            0.01066449844960981
+          ],
+          "ndcg": [
+            0.005407601032707465
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0017491626349088274
+          ],
+          "recall": [
+            0.015648451579956858
+          ],
+          "ndcg": [
+            0.0071938411501559765
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0013136620856911854
+          ],
+          "recall": [
+            0.01049996301865745
+          ],
+          "ndcg": [
+            0.005087348620022932
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0041040389804434954,
+      "late_best": false,
+      "weak_negative_fraction": 0.5284997179800223,
+      "explicit_negative_fraction": 0.0003873901195596592
+    },
+    {
+      "seed": 2020,
+      "variant": "evidence0",
+      "role": "new_source_ablation",
+      "best_epoch": 3,
+      "ndcg20": 0.004282602753220078,
+      "recall20": 0.00950165950626034,
+      "sparse_ndcg20": 0.0032815623302092744,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9916013822079466,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.001264367816091958
+          ],
+          "recall": [
+            0.00950165950626034
+          ],
+          "ndcg": [
+            0.004282602753220078
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007325013564839938
+          ],
+          "recall": [
+            0.009014510412402865
+          ],
+          "ndcg": [
+            0.0032815623302092744
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017268201617921556
+          ],
+          "recall": [
+            0.009624350840405508
+          ],
+          "ndcg": [
+            0.004807019200976956
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.001569284207914656
+          ],
+          "recall": [
+            0.01415480734237712
+          ],
+          "ndcg": [
+            0.006121785077391946
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0011620856911883565
+          ],
+          "recall": [
+            0.009603414929064849
+          ],
+          "ndcg": [
+            0.004314826487358785
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0035025766091342702,
+      "late_best": false,
+      "weak_negative_fraction": 0.02067335252430534,
+      "explicit_negative_fraction": 1.3281946956331172e-05
+    },
+    {
+      "seed": 2021,
+      "variant": "evidence0",
+      "role": "new_source_ablation",
+      "best_epoch": 4,
+      "ndcg20": 0.004445057658934607,
+      "recall20": 0.009809741077901309,
+      "sparse_ndcg20": 0.003894800322911383,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9916257324440332,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013193403298350876
+          ],
+          "recall": [
+            0.009809741077901309
+          ],
+          "ndcg": [
+            0.004445057658934607
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0008138903960933265
+          ],
+          "recall": [
+            0.009141115585128493
+          ],
+          "ndcg": [
+            0.003894800322911383
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017890479153702512
+          ],
+          "recall": [
+            0.010083532080362036
+          ],
+          "ndcg": [
+            0.005075206629047058
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016375139560848592
+          ],
+          "recall": [
+            0.01474318573127654
+          ],
+          "ndcg": [
+            0.006339427526948371
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0012025060630557775
+          ],
+          "recall": [
+            0.009880944089475983
+          ],
+          "ndcg": [
+            0.004240697408398923
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0036820154842921626,
+      "late_best": false,
+      "weak_negative_fraction": 0.02232699614641645,
+      "explicit_negative_fraction": 1.5495604782386368e-05
+    },
+    {
+      "seed": 2022,
+      "variant": "evidence0",
+      "role": "new_source_ablation",
+      "best_epoch": 2,
+      "ndcg20": 0.00422971441878773,
+      "recall20": 0.009383776567014973,
+      "sparse_ndcg20": 0.003561748035048591,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9914597081070791,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0012943528235882106
+          ],
+          "recall": [
+            0.009383776567014973
+          ],
+          "ndcg": [
+            0.00422971441878773
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0008138903960933265
+          ],
+          "recall": [
+            0.009020539230151703
+          ],
+          "ndcg": [
+            0.003561748035048591
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017112632233976318
+          ],
+          "recall": [
+            0.009194460377773573
+          ],
+          "ndcg": [
+            0.004802595007941789
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016065004341893124
+          ],
+          "recall": [
+            0.014187617957204598
+          ],
+          "ndcg": [
+            0.006102288118991682
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0012025060630557775
+          ],
+          "recall": [
+            0.009642044280042623
+          ],
+          "ndcg": [
+            0.004106396680649122
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.003831377302497964,
+      "late_best": false,
+      "weak_negative_fraction": 0.017585335867050588,
+      "explicit_negative_fraction": 8.854631304220782e-06
+    }
+  ],
+  "aggregates": {
+    "uniform": {
+      "ndcg20": {
+        "mean": 0.00448866940302782,
+        "sample_std": 8.17879532456151e-05
+      },
+      "recall20": {
+        "mean": 0.009938596080122446,
+        "sample_std": 0.00011014541284681019
+      },
+      "sparse_ndcg20": {
+        "mean": 0.004327996342873882,
+        "sample_std": 0.00020287779643616554
+      },
+      "tail_ndcg20": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      },
+      "unique_negative_pair_fraction": {
+        "mean": 0.9987891291691479,
+        "sample_std": 4.027397424337115e-05
+      },
+      "weak_negative_fraction": {
+        "mean": 0.004513644582290036,
+        "sample_std": 5.9598182508236254e-05
+      }
+    },
+    "evidence05": {
+      "ndcg20": {
+        "mean": 0.00475235717275209,
+        "sample_std": 0.0002383265156764094
+      },
+      "recall20": {
+        "mean": 0.009944666459921018,
+        "sample_std": 0.00034273593948969995
+      },
+      "sparse_ndcg20": {
+        "mean": 0.0035172406203868812,
+        "sample_std": 0.00059524700790601
+      },
+      "tail_ndcg20": {
+        "mean": 7.436235403777391e-06,
+        "sample_std": 1.2879937536384904e-05
+      },
+      "unique_negative_pair_fraction": {
+        "mean": 0.7034001046322266,
+        "sample_std": 0.016267636892133657
+      },
+      "weak_negative_fraction": {
+        "mean": 0.5207039288753973,
+        "sample_std": 0.01930157268465751
+      }
+    },
+    "evidence0": {
+      "ndcg20": {
+        "mean": 0.0043191249436474715,
+        "sample_std": 0.000112221123521599
+      },
+      "recall20": {
+        "mean": 0.009565059050392207,
+        "sample_std": 0.00021994560186726917
+      },
+      "sparse_ndcg20": {
+        "mean": 0.0035793702293897495,
+        "sample_std": 0.0003069985589923444
+      },
+      "tail_ndcg20": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      },
+      "unique_negative_pair_fraction": {
+        "mean": 0.9915622742530196,
+        "sample_std": 8.965541935204583e-05
+      },
+      "weak_negative_fraction": {
+        "mean": 0.02019522817925746,
+        "sample_std": 0.0024067172077800467
+      }
+    }
+  },
+  "paired_differences": [
+    {
+      "seed": 2020,
+      "reference": "uniform",
+      "ndcg20_relative_percent": -2.638123504479195,
+      "recall20_relative_percent": -3.307539705019402,
+      "sparse_ndcg20_relative_percent": -20.31522857415826
+    },
+    {
+      "seed": 2020,
+      "reference": "evidence05",
+      "ndcg20_relative_percent": -4.3683392016911515,
+      "recall20_relative_percent": -0.6371942258524776,
+      "sparse_ndcg20_relative_percent": 13.228250497231663
+    },
+    {
+      "seed": 2021,
+      "reference": "uniform",
+      "ndcg20_relative_percent": -1.4173517960085147,
+      "recall20_relative_percent": -2.360343428117906,
+      "sparse_ndcg20_relative_percent": -13.891647413914555
+    },
+    {
+      "seed": 2021,
+      "reference": "evidence05",
+      "ndcg20_relative_percent": -8.697043684251138,
+      "recall20_relative_percent": -2.3552799894221543,
+      "sparse_ndcg20_relative_percent": -4.665621708874834
+    },
+    {
+      "seed": 2022,
+      "reference": "uniform",
+      "ndcg20_relative_percent": -7.210510916499391,
+      "recall20_relative_percent": -5.616939648725506,
+      "sparse_ndcg20_relative_percent": -17.982534376674497
+    },
+    {
+      "seed": 2022,
+      "reference": "evidence05",
+      "ndcg20_relative_percent": -13.861663741973251,
+      "recall20_relative_percent": -8.227542129917042,
+      "sparse_ndcg20_relative_percent": -0.17881500195785494
+    }
+  ],
+  "pareto_variants": [
+    "uniform",
+    "evidence05"
+  ],
+  "extension_review": [],
+  "interpretation": "Change only evidence_fraction from 0.5 to 0 at beta=0, targeted_rate=0.8. Compare three reused seeds with frozen same-budget references. Exploratory validation diagnosis, no test evaluation or significance claim."
+}

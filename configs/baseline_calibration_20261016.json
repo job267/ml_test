@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "seeds": [2020, 2021, 2022],
+  "horizons": [30, 100],
+  "training": {
+    "model": "lgn", "recdim": 64, "layer": 0,
+    "lr": 0.001, "decay": 0.0001, "sampler": "uniform",
+    "candidate_size": 20, "evidence_fraction": 0.5,
+    "weak_confidence": 0.2, "unknown_confidence": 0.05,
+    "reliability_beta": 1.0, "temperature": 1.0, "targeted_rate": 0.8,
+    "curriculum_epochs": 100, "score_batch": 8192,
+    "bpr_batch": 2048, "test_batch": 100, "samples_per_epoch": 0,
+    "eval_interval": 1, "topks": "[20]"
+  },
+  "references": {
+    "2020": "runs/stage1_beta_pilot_20261015/uniform-seed2020",
+    "2021": "runs/stage1_beta_replication_20261016/seed2021/uniform-seed2021",
+    "2022": "runs/stage1_beta_replication_20261016/seed2022/uniform-seed2022"
+  },
+  "mf_definition": "LightGCN layer=0 is MF/BPR with matched N(0,0.1) initialization. Native PureMF default N(0,1) is deliberately not mixed into the graph ablation.",
+  "selection": "Best overall validation NDCG@20 independently inside each common 30/100 epoch window. Every subgroup and Recall uses that same epoch. No current-protocol test evaluation.",
+  "public": {
+    "commit": "7753efd0a8cf3aaed9b150a3d835dbaa8fe0e50d",
+    "model": "lgn", "algo": "vanilla", "seeds": [2018, 2019, 2020, 2021, 2022],
+    "max_epochs": 600, "batch_size": 2048, "recdim": 64, "layer": 3,
+    "lr": 0.001, "decay": 0.0001, "eval_interval": 5,
+    "selection": "Author default rounded validation Recall@10; original patience rule after epoch index>100, 20 evaluations, strict improvement only. Test deferred until stopping, evaluated once per seed with the selected checkpoint.",
+    "test_masks": "One scoring pass reports both original author compressed validation masking and corrected user-aligned masking. 3507 test users are absent from validation. Neither test metric influences selection.",
+    "purpose": "Independent author-code and author-split calibration; never compare raw scores to the current engagement/random-exposure protocol."
+  }
+}

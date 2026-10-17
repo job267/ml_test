@@ -1,0 +1,164 @@
+{
+  "schema_version": "validation-factorial-v1",
+  "created_utc": "2026-10-17T07:07:26.173692+00:00",
+  "config": {
+    "seed": 2020,
+    "positive_rules": [
+      "engagement",
+      "click"
+    ],
+    "validation_sources": [
+      "random",
+      "all"
+    ],
+    "train_end": 20220428,
+    "val_end": 20220503,
+    "min_train_positives": 2,
+    "recdim": 64,
+    "layer": 3,
+    "lr": 0.001,
+    "decay": 0.0001,
+    "batch_size": 2048,
+    "eval_batch": 512,
+    "initial_epochs": 30,
+    "maximum_epochs": 60,
+    "extension_rule": "If any common-user validation view has its best NDCG@20 in epochs 26-30, extend BOTH label models to 60. Otherwise finish both at 30. No test-based decisions.",
+    "training_users": "Intersection of users eligible under both labels, determined using training data only",
+    "items": "Same sorted vocabulary of all training exposures under both labels",
+    "samples_per_epoch": "Minimum of the two common-cohort positive-pair counts, identical update budget",
+    "primary_evaluation": "Same fixed epochs and intersection of users with targets in all four validation views; report whole available validation cohorts separately",
+    "secondary_selection": "Per label best common-user random-exposure validation NDCG@20; all other views use that SAME checkpoint"
+  },
+  "raw_sha256": {
+    "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/data/raw/KuaiRand-Pure/data/log_random_4_22_to_5_08_pure.csv": "60b80994da969cd53da4d50c37ba3dafd6fb185df804c92c8410df34845a9d2c",
+    "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/data/raw/KuaiRand-Pure/data/log_standard_4_08_to_4_21_pure.csv": "5bb6eb0b3d9f47e5436cb5dc82ee1899b845ebf9750a5560b801e929e18bd41c",
+    "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/data/raw/KuaiRand-Pure/data/log_standard_4_22_to_5_08_pure.csv": "429e3b948828942e572f2c3a5be5a25799ffe75591d22d18cf417b9b534d31fd"
+  },
+  "core_event_signature_sha256": "3d6d8c7ff5756cd76b3f28ca913a2f6cca4fbbb11c339cd01529c53ce367a631",
+  "driver_sha256": "f6b8bd2a03d82ead1595489a2abf1d2e9dec15eeff607db76ddab89be909b11a",
+  "files": {
+    "native_engagement.npz": "25637c3f1f660b596ca908ea0fc4586e374f7e5ffcc68cd83ebb051a45604b2e",
+    "native_click.npz": "b2a692a245a9fb3fea0e92d134ecaa9f41c20c520ad10fbb86ffd8b7cbf8dc33",
+    "common_engagement.npz": "7dccafe19de2e75922fa6c84cefc014378e59607482e1219734f44698608a56a",
+    "common_click.npz": "6a628e3bc3bf6a4a94660da22b5ab25a476242f572e4c3b5663b59faec44e675",
+    "validation_references.json": "d16724429a6583946b0bb22bf5140d7f26c9c02c782856f96e9c75bf075b4f38"
+  },
+  "audit": {
+    "rows_read": 2622668,
+    "future_rows_skipped_before_feedback_parsing": 602123,
+    "prefix_rows": 2020545,
+    "duplicate_prefix_observations": 20553,
+    "unique_prefix_events": 1999992
+  },
+  "cohorts": {
+    "native_engagement": {
+      "n_users": 24524,
+      "m_items": 7583,
+      "train_pairs": 451741,
+      "minimum_user_training_positives": 2,
+      "zero_positive_degree_items": 164,
+      "common_eval_users": 9916,
+      "validation": {
+        "random": {
+          "users": 10005,
+          "pairs": 30593,
+          "low_degree_1_to_14_target_fraction": 0.36263197463472036,
+          "zero_degree_target_fraction": 0.007812244631124767,
+          "median_target_training_degree": 26.0
+        },
+        "all": {
+          "users": 16482,
+          "pairs": 59838,
+          "low_degree_1_to_14_target_fraction": 0.20319863631805876,
+          "zero_degree_target_fraction": 0.004094388181423176,
+          "median_target_training_degree": 87.0
+        }
+      }
+    },
+    "native_click": {
+      "n_users": 25427,
+      "m_items": 7583,
+      "train_pairs": 624791,
+      "minimum_user_training_positives": 2,
+      "zero_positive_degree_items": 20,
+      "common_eval_users": 9916,
+      "validation": {
+        "random": {
+          "users": 14210,
+          "pairs": 62494,
+          "low_degree_1_to_14_target_fraction": 0.2655614939034147,
+          "zero_degree_target_fraction": 0.0010080967772906199,
+          "median_target_training_degree": 32.0
+        },
+        "all": {
+          "users": 19881,
+          "pairs": 103576,
+          "low_degree_1_to_14_target_fraction": 0.16789603769212946,
+          "zero_degree_target_fraction": 0.0006082490152158801,
+          "median_target_training_degree": 82.0
+        }
+      }
+    },
+    "common_engagement": {
+      "n_users": 24506,
+      "m_items": 7583,
+      "train_pairs": 451684,
+      "minimum_user_training_positives": 2,
+      "zero_positive_degree_items": 164,
+      "common_eval_users": 9916,
+      "validation": {
+        "random": {
+          "users": 9999,
+          "pairs": 30581,
+          "low_degree_1_to_14_target_fraction": 0.3629704718616134,
+          "zero_degree_target_fraction": 0.007815310159903208,
+          "median_target_training_degree": 26.0
+        },
+        "all": {
+          "users": 16473,
+          "pairs": 59818,
+          "low_degree_1_to_14_target_fraction": 0.20340031428666958,
+          "zero_degree_target_fraction": 0.004095757129960882,
+          "median_target_training_degree": 87.0
+        }
+      }
+    },
+    "common_click": {
+      "n_users": 24506,
+      "m_items": 7583,
+      "train_pairs": 622137,
+      "minimum_user_training_positives": 2,
+      "zero_positive_degree_items": 21,
+      "common_eval_users": 9916,
+      "validation": {
+        "random": {
+          "users": 13835,
+          "pairs": 61544,
+          "low_degree_1_to_14_target_fraction": 0.26862082412582866,
+          "zero_degree_target_fraction": 0.0011211490965813077,
+          "median_target_training_degree": 32.0
+        },
+        "all": {
+          "users": 19360,
+          "pairs": 102127,
+          "low_degree_1_to_14_target_fraction": 0.1697396379018281,
+          "zero_degree_target_fraction": 0.0006756293634396389,
+          "median_target_training_degree": 82.0
+        }
+      }
+    }
+  },
+  "samples_per_epoch": 451684,
+  "original_engagement_random_crosscheck": {
+    "original_manifest_sha256": "99601459915dbdde342261197d544d6d1186ad4037b8ed80dc601c9ea2e5870f",
+    "train_pairs_equal": true,
+    "random_validation_pairs_equal": true,
+    "vocabulary_equal": true,
+    "test_file_loaded": false
+  },
+  "fit_user_selection": "Training-positive eligibility intersection only; validation common users affect reporting, never training graph/eligibility",
+  "native_results": "Native complete-cohort Popular/random references and data diagnostics; neural factorial models train only on the shared training cohort",
+  "future_feedback_parsed": false,
+  "test_evaluated": false,
+  "seconds": 291.68059183610603
+}

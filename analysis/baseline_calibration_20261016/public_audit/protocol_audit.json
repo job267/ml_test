@@ -1,0 +1,64 @@
+{
+  "repository": "https://github.com/hsyoo32/tpab_",
+  "commit": "7753efd0a8cf3aaed9b150a3d835dbaa8fe0e50d",
+  "n_users": 22128,
+  "n_items": 7076,
+  "splits": {
+    "training": {
+      "users": 22128,
+      "nonempty_users": 22128,
+      "interactions": 496142,
+      "unique_pairs": 496142,
+      "min_timestamp": 1649476421916,
+      "max_timestamp": 1650552143366
+    },
+    "validation": {
+      "users": 18621,
+      "nonempty_users": 18621,
+      "interactions": 63291,
+      "unique_pairs": 63291,
+      "min_timestamp": 1650552144855,
+      "max_timestamp": 1651289931427
+    },
+    "testing": {
+      "users": 17701,
+      "nonempty_users": 17701,
+      "interactions": 61631,
+      "unique_pairs": 61631,
+      "min_timestamp": 1651289942337,
+      "max_timestamp": 1652025090862
+    }
+  },
+  "split_pair_overlaps": {
+    "training_validation": 0,
+    "training_testing": 0,
+    "validation_testing": 0
+  },
+  "train_graph_cache_max_abs_difference": 2.9802322387695312e-08,
+  "train_graph_nnz": 992284,
+  "source_and_data_sha256": {
+    "Procedure.py": "6713bfa79452cb805facb3345cdd65dac475be2939a635155dbcfb4f3d62c1e6",
+    "README.md": "70505477e90fa50a2d00a6988e1331c80074997d4e672b3f66934026f4147f64",
+    "_tester.py": "f12082c87604c28401bf3581f8384146f7991eedad9d2234fa1085df65f685b9",
+    "dataloader.py": "e7a295cf6dc48cd9a35f97f02a94d1c93d4194ea61960d90d15853b755f61490",
+    "inference.py": "aeebc76ebe0698269dd9c5b81c0ba2526074a6f6936c1a7554995356942df42d",
+    "kuairand/interaction_time_dict.npy": "553c6252315f91272fb6f30083211a71e5d79dc630fc9f688220b21c1d5cab67",
+    "kuairand/s_pre_adj_mat.npz": "a3f53ba883e2b40fb3b70b4a7249363ce8e168b3d27db2da2ecb59de9b17a736",
+    "kuairand/testing_dict.npy": "f631cf95a9199cda2f0ba190cf358e276bfb008bc4a22e58ce56a7d00beaa703",
+    "kuairand/testing_list_time.npy": "223d641c1bf4001829b6ae7089e155849decd14151b54ef684ebcf41bec10e50",
+    "kuairand/training_dict.npy": "9117d185de8330a65d2f89a8c04401d1b56374f89298717033cdff79ccde287d",
+    "kuairand/training_list.npy": "6acd9af240874bf82dcd4b9099f44bcfd9f6a173f4d806b7a5c0cf539255d31d",
+    "kuairand/training_list_time.npy": "ea25b88af16ee402b96693426c1b497c801d0368bc3605856e0df980192f029e",
+    "kuairand/unbias_dict.npy": "394bcce6cbd3ffb61640c8f6922c83e5f43664532ef35bc74af467eb4f980d46",
+    "kuairand/unbias_list_time.npy": "7966921471f7fd3d13c6df46e77d45d43b9098ad19281dd18f985f0f3f222117",
+    "kuairand/validation_dict.npy": "6403cabf5bbb45d1d4447e57ebb88805d666a9396947459f55c4a03f028634c4",
+    "kuairand/validation_list_time.npy": "1651d7e9754a0998ce10a70371dbad9a0ea8d208279e10d6bc8769e3e6235c4d",
+    "main.py": "1f8fdaca87a7826f5aadd490ffaabc726776bedcba4984152e8344b2d7ec2d4f",
+    "model.py": "7a27fbcf1aa988be728784629ae938184d1181a9c0b102b397cecc088d4aba9e",
+    "parse.py": "47be6c24f0e14530005a7621c98484fa03b1ecb1921b1fc698c62c8d02dc48d8",
+    "register.py": "75ee392c6bdfb0bbbcaa732cbb25b2e9dfb5e3f2fe768c57704bb8860efc67fb",
+    "utils.py": "d3e42a9d405f09424ce4b6aa82cfb39d3d9197c43454bfc0232382fa696aeeee",
+    "world.py": "4eb927762af66af8b4f86c57609180aa07849a6b08252e8250556f94ae7caf7f"
+  },
+  "test_metrics_evaluated": false
+}

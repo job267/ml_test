@@ -1,0 +1,1416 @@
+{
+  "updated_utc": "2026-10-16T02:41:56.429649+00:00",
+  "split": "val",
+  "comparison_horizon": 30,
+  "completed_new_runs": 6,
+  "expected_new_runs": 6,
+  "rows": [
+    {
+      "seed": 2020,
+      "variant": "uniform",
+      "targeted_rate": 0.0,
+      "role": "existing_reference",
+      "best_epoch": 10,
+      "ndcg20": 0.0043986444256927425,
+      "recall20": 0.009826680877985251,
+      "sparse_ndcg20": 0.004118180012931637,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987647789330611,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.001344327836081964
+          ],
+          "recall": [
+            0.009826680877985251
+          ],
+          "ndcg": [
+            0.0043986444256927425
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0010309278350515468
+          ],
+          "recall": [
+            0.01142216184338582
+          ],
+          "ndcg": [
+            0.004118180012931637
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.001711263223397632
+          ],
+          "recall": [
+            0.009108118419931928
+          ],
+          "ndcg": [
+            0.0048197827476658
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016685274779804059
+          ],
+          "recall": [
+            0.014938513500619683
+          ],
+          "ndcg": [
+            0.006353883275210841
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001222716248989488
+          ],
+          "recall": [
+            0.009699152244385834
+          ],
+          "ndcg": [
+            0.004229557389697862
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004160964752285284,
+      "late_best": false
+    },
+    {
+      "seed": 2020,
+      "variant": "rate08",
+      "targeted_rate": 0.8,
+      "role": "existing_reference",
+      "best_epoch": 6,
+      "ndcg20": 0.004478226894179184,
+      "recall20": 0.009562591788981573,
+      "sparse_ndcg20": 0.0028981833736709604,
+      "tail_ndcg20": 2.230870621133217e-05,
+      "tail_hit_pairs": 1,
+      "unique_negative_pair_fraction": 0.6908007021722624,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013543228385807153
+          ],
+          "recall": [
+            0.009562591788981573
+          ],
+          "ndcg": [
+            0.004478226894179184
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0006511123168746611
+          ],
+          "recall": [
+            0.007769559547267516
+          ],
+          "ndcg": [
+            0.0028981833736709604
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            8.571918395336878e-06
+          ],
+          "recall": [
+            4.2859591976684385e-05
+          ],
+          "ndcg": [
+            2.230870621133217e-05
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0019757311761045386
+          ],
+          "recall": [
+            0.010826230561764743
+          ],
+          "ndcg": [
+            0.005477683348900591
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016747301823595157
+          ],
+          "recall": [
+            0.014637217806692793
+          ],
+          "ndcg": [
+            0.006527438817861409
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001212611156022633
+          ],
+          "recall": [
+            0.009409645832181629
+          ],
+          "ndcg": [
+            0.0044175492795514686
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.003981867844089476,
+      "late_best": false
+    },
+    {
+      "seed": 2021,
+      "variant": "uniform",
+      "targeted_rate": 0.0,
+      "role": "existing_reference",
+      "best_epoch": 14,
+      "ndcg20": 0.004508965563327839,
+      "recall20": 0.010046881996844592,
+      "sparse_ndcg20": 0.004523138819799878,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.998835615983495,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013243378310844628
+          ],
+          "recall": [
+            0.010046881996844592
+          ],
+          "ndcg": [
+            0.004508965563327839
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.001085187194791102
+          ],
+          "recall": [
+            0.012615867757656031
+          ],
+          "ndcg": [
+            0.004523138819799878
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017112632233976318
+          ],
+          "recall": [
+            0.009500305300508419
+          ],
+          "ndcg": [
+            0.005200452051492639
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016437166604639686
+          ],
+          "recall": [
+            0.01514448576651007
+          ],
+          "ndcg": [
+            0.006440721462440428
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0011620856911883565
+          ],
+          "recall": [
+            0.009445034127978166
+          ],
+          "ndcg": [
+            0.004054527631913207
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004037929087437374,
+      "late_best": false
+    },
+    {
+      "seed": 2021,
+      "variant": "rate08",
+      "targeted_rate": 0.8,
+      "role": "existing_reference",
+      "best_epoch": 10,
+      "ndcg20": 0.004868470680798622,
+      "recall20": 0.010046361008397198,
+      "sparse_ndcg20": 0.004085410103601584,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.7217653478431225,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0014242878560719707
+          ],
+          "recall": [
+            0.010046361008397198
+          ],
+          "ndcg": [
+            0.004868470680798622
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007596310363537713
+          ],
+          "recall": [
+            0.009200542502938482
+          ],
+          "ndcg": [
+            0.004085410103601584
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0019601742377100143
+          ],
+          "recall": [
+            0.010319156420265596
+          ],
+          "ndcg": [
+            0.0055676138400102245
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0017677707480461564
+          ],
+          "recall": [
+            0.015598934468457617
+          ],
+          "ndcg": [
+            0.007102756562921088
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0013237671786580406
+          ],
+          "recall": [
+            0.010184210452983964
+          ],
+          "ndcg": [
+            0.004706007974668474
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004083571332551717,
+      "late_best": false
+    },
+    {
+      "seed": 2022,
+      "variant": "uniform",
+      "targeted_rate": 0.0,
+      "role": "existing_reference",
+      "best_epoch": 7,
+      "ndcg20": 0.004558398220062878,
+      "recall20": 0.009942225365537493,
+      "sparse_ndcg20": 0.004342670195890132,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987669925908873,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013843078460769672
+          ],
+          "recall": [
+            0.009942225365537493
+          ],
+          "ndcg": [
+            0.004558398220062878
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0010309278350515468
+          ],
+          "recall": [
+            0.011460918528914074
+          ],
+          "ndcg": [
+            0.004342670195890132
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0018046048537647753
+          ],
+          "recall": [
+            0.009300186323433022
+          ],
+          "ndcg": [
+            0.004942321074090189
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0017181491130132808
+          ],
+          "recall": [
+            0.015037630981575643
+          ],
+          "ndcg": [
+            0.006567681905937731
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0012429264349231987
+          ],
+          "recall": [
+            0.009793591974514996
+          ],
+          "ndcg": [
+            0.004389372087424765
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004122774672422548,
+      "late_best": false
+    },
+    {
+      "seed": 2022,
+      "variant": "rate08",
+      "targeted_rate": 0.8,
+      "role": "existing_reference",
+      "best_epoch": 8,
+      "ndcg20": 0.004910373943278463,
+      "recall20": 0.010225046582384283,
+      "sparse_ndcg20": 0.0035681283838880995,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.6976342638812948,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.001409295352323844
+          ],
+          "recall": [
+            0.010225046582384283
+          ],
+          "ndcg": [
+            0.004910373943278463
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007596310363537713
+          ],
+          "recall": [
+            0.008720605547146942
+          ],
+          "ndcg": [
+            0.0035681283838880995
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0019290603609209667
+          ],
+          "recall": [
+            0.01066449844960981
+          ],
+          "ndcg": [
+            0.005407601032707465
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0017491626349088274
+          ],
+          "recall": [
+            0.015648451579956858
+          ],
+          "ndcg": [
+            0.0071938411501559765
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0013136620856911854
+          ],
+          "recall": [
+            0.01049996301865745
+          ],
+          "ndcg": [
+            0.005087348620022932
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0041040389804434954,
+      "late_best": false
+    },
+    {
+      "seed": 2020,
+      "variant": "rate02",
+      "targeted_rate": 0.2,
+      "role": "new_rate_ablation",
+      "best_epoch": 3,
+      "ndcg20": 0.004583076632700068,
+      "recall20": 0.009591077811926455,
+      "sparse_ndcg20": 0.0037485963472553632,
+      "tail_ndcg20": 8.804816087543907e-06,
+      "tail_hit_pairs": 1,
+      "unique_negative_pair_fraction": 0.9440675077090633,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013593203398300905
+          ],
+          "recall": [
+            0.009591077811926455
+          ],
+          "ndcg": [
+            0.004583076632700068
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007867607162235488
+          ],
+          "recall": [
+            0.008776372111323706
+          ],
+          "ndcg": [
+            0.0037485963472553632
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            8.571918395336878e-06
+          ],
+          "recall": [
+            1.1429224527115835e-05
+          ],
+          "ndcg": [
+            8.804816087543907e-06
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0019135034225264429
+          ],
+          "recall": [
+            0.010105666691562059
+          ],
+          "ndcg": [
+            0.005350252234056101
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016809328867386248
+          ],
+          "recall": [
+            0.01479338034148552
+          ],
+          "ndcg": [
+            0.0066787610457328846
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001212611156022633
+          ],
+          "recall": [
+            0.009560280307290637
+          ],
+          "ndcg": [
+            0.0043955755783986
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.003787965594149455,
+      "late_best": false
+    },
+    {
+      "seed": 2020,
+      "variant": "rate04",
+      "targeted_rate": 0.4,
+      "role": "new_rate_ablation",
+      "best_epoch": 23,
+      "ndcg20": 0.0046272996593665905,
+      "recall20": 0.00901774196018855,
+      "sparse_ndcg20": 0.0034001898812996696,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.8806351427034518,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0012943528235882103
+          ],
+          "recall": [
+            0.00901774196018855
+          ],
+          "ndcg": [
+            0.0046272996593665905
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007053716766142163
+          ],
+          "recall": [
+            0.0072206424906542
+          ],
+          "ndcg": [
+            0.0034001898812996696
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0016490354698195367
+          ],
+          "recall": [
+            0.008755582983805073
+          ],
+          "ndcg": [
+            0.004869921636952906
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016065004341893122
+          ],
+          "recall": [
+            0.014122041383953784
+          ],
+          "ndcg": [
+            0.006718375063213747
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0012833468067906197
+          ],
+          "recall": [
+            0.009857401069414146
+          ],
+          "ndcg": [
+            0.0049267694016897415
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004358306531364551,
+      "late_best": false
+    },
+    {
+      "seed": 2021,
+      "variant": "rate04",
+      "targeted_rate": 0.4,
+      "role": "new_rate_ablation",
+      "best_epoch": 4,
+      "ndcg20": 0.004427673058162684,
+      "recall20": 0.009053720079298413,
+      "sparse_ndcg20": 0.003622127364065734,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.8423521442596532,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0012643678160919583
+          ],
+          "recall": [
+            0.009053720079298413
+          ],
+          "ndcg": [
+            0.004427673058162684
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007325013564839938
+          ],
+          "recall": [
+            0.00939734033945417
+          ],
+          "ndcg": [
+            0.003622127364065734
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017112632233976318
+          ],
+          "recall": [
+            0.00849308019184725
+          ],
+          "ndcg": [
+            0.005024516706387319
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0015692842079146562
+          ],
+          "recall": [
+            0.014223165495960435
+          ],
+          "ndcg": [
+            0.006528334151744245
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0011721907841552117
+          ],
+          "recall": [
+            0.009289897213251715
+          ],
+          "ndcg": [
+            0.004340034664635346
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004211492742152286,
+      "late_best": false
+    },
+    {
+      "seed": 2021,
+      "variant": "rate02",
+      "targeted_rate": 0.2,
+      "role": "new_rate_ablation",
+      "best_epoch": 3,
+      "ndcg20": 0.004540585591887123,
+      "recall20": 0.00991574755206824,
+      "sparse_ndcg20": 0.004038550102434043,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9445677943777518,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013693153423288411
+          ],
+          "recall": [
+            0.00991574755206824
+          ],
+          "ndcg": [
+            0.004540585591887123
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0009495387954422143
+          ],
+          "recall": [
+            0.010228455929115608
+          ],
+          "ndcg": [
+            0.004038550102434043
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0019446172993154902
+          ],
+          "recall": [
+            0.010843779173355045
+          ],
+          "ndcg": [
+            0.005451594938253087
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.001699540999875953
+          ],
+          "recall": [
+            0.0154303566655183
+          ],
+          "ndcg": [
+            0.0066486764565040785
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0011519805982215011
+          ],
+          "recall": [
+            0.009196463968860048
+          ],
+          "ndcg": [
+            0.00413582960317286
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0038762421443686566,
+      "late_best": false
+    },
+    {
+      "seed": 2022,
+      "variant": "rate02",
+      "targeted_rate": 0.2,
+      "role": "new_rate_ablation",
+      "best_epoch": 3,
+      "ndcg20": 0.00441166365644633,
+      "recall20": 0.009342248702171877,
+      "sparse_ndcg20": 0.0033815142724695738,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9440365164994986,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013043478260869614
+          ],
+          "recall": [
+            0.009342248702171877
+          ],
+          "ndcg": [
+            0.00441166365644633
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0007867607162235488
+          ],
+          "recall": [
+            0.00849603208600267
+          ],
+          "ndcg": [
+            0.0033815142724695738
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0018046048537647753
+          ],
+          "recall": [
+            0.009665219102337865
+          ],
+          "ndcg": [
+            0.005098165044219241
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016189058429475311
+          ],
+          "recall": [
+            0.014295845025283058
+          ],
+          "ndcg": [
+            0.006431709538402138
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0011721907841552117
+          ],
+          "recall": [
+            0.009447654999153747
+          ],
+          "ndcg": [
+            0.004349446569616712
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0037923243579208563,
+      "late_best": false
+    },
+    {
+      "seed": 2022,
+      "variant": "rate04",
+      "targeted_rate": 0.4,
+      "role": "new_rate_ablation",
+      "best_epoch": 2,
+      "ndcg20": 0.0043420652736580745,
+      "recall20": 0.009062222104721284,
+      "sparse_ndcg20": 0.0028430685924611364,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.8449886107304849,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0012793603198400845
+          ],
+          "recall": [
+            0.009062222104721284
+          ],
+          "ndcg": [
+            0.0043420652736580745
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0006239826370048836
+          ],
+          "recall": [
+            0.007272182082988263
+          ],
+          "ndcg": [
+            0.0028430685924611364
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017890479153702516
+          ],
+          "recall": [
+            0.009538660845466269
+          ],
+          "ndcg": [
+            0.005105898594236994
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0015878923210519843
+          ],
+          "recall": [
+            0.013748662503362662
+          ],
+          "ndcg": [
+            0.006296656908572646
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001192400970088922
+          ],
+          "recall": [
+            0.009419491637320216
+          ],
+          "ndcg": [
+            0.004404250114220994
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.003743463795623405,
+      "late_best": false
+    }
+  ],
+  "aggregates": {
+    "uniform": {
+      "ndcg20": {
+        "mean": 0.00448866940302782,
+        "sample_std": 8.17879532456151e-05
+      },
+      "recall20": {
+        "mean": 0.009938596080122446,
+        "sample_std": 0.00011014541284681019
+      },
+      "sparse_ndcg20": {
+        "mean": 0.004327996342873882,
+        "sample_std": 0.00020287779643616554
+      },
+      "tail_ndcg20": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      },
+      "unique_negative_pair_fraction": {
+        "mean": 0.9987891291691479,
+        "sample_std": 4.027397424337115e-05
+      }
+    },
+    "rate02": {
+      "ndcg20": {
+        "mean": 0.004511775293677841,
+        "sample_std": 8.92643661783467e-05
+      },
+      "recall20": {
+        "mean": 0.009616358022055524,
+        "sample_std": 0.0002875839868216586
+      },
+      "sparse_ndcg20": {
+        "mean": 0.0037228869073863266,
+        "sample_std": 0.00032927154741650466
+      },
+      "tail_ndcg20": {
+        "mean": 2.9349386958479693e-06,
+        "sample_std": 5.083462938308622e-06
+      },
+      "unique_negative_pair_fraction": {
+        "mean": 0.9442239395287713,
+        "sample_std": 0.0002981899254555172
+      }
+    },
+    "rate04": {
+      "ndcg20": {
+        "mean": 0.004465679330395783,
+        "sample_std": 0.00014636605222667225
+      },
+      "recall20": {
+        "mean": 0.00904456138140275,
+        "sample_std": 2.3612118176293807e-05
+      },
+      "sparse_ndcg20": {
+        "mean": 0.00328846194594218,
+        "sample_std": 0.0004013670278659567
+      },
+      "tail_ndcg20": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      },
+      "unique_negative_pair_fraction": {
+        "mean": 0.8559919658978633,
+        "sample_std": 0.02138229083065178
+      }
+    },
+    "rate08": {
+      "ndcg20": {
+        "mean": 0.00475235717275209,
+        "sample_std": 0.0002383265156764094
+      },
+      "recall20": {
+        "mean": 0.009944666459921018,
+        "sample_std": 0.00034273593948969995
+      },
+      "sparse_ndcg20": {
+        "mean": 0.0035172406203868812,
+        "sample_std": 0.00059524700790601
+      },
+      "tail_ndcg20": {
+        "mean": 7.436235403777391e-06,
+        "sample_std": 1.2879937536384904e-05
+      },
+      "unique_negative_pair_fraction": {
+        "mean": 0.7034001046322266,
+        "sample_std": 0.016267636892133657
+      }
+    }
+  },
+  "paired_differences": [
+    {
+      "seed": 2020,
+      "variant": "rate02",
+      "reference": "uniform",
+      "ndcg20_relative_percent": 4.192932848357689,
+      "recall20_relative_percent": -2.397585400240476,
+      "sparse_ndcg20_relative_percent": -8.9744417319236
+    },
+    {
+      "seed": 2020,
+      "variant": "rate02",
+      "reference": "rate08",
+      "ndcg20_relative_percent": 2.3413226037557022,
+      "recall20_relative_percent": 0.29789019100139313,
+      "sparse_ndcg20_relative_percent": 29.342966401302427
+    },
+    {
+      "seed": 2020,
+      "variant": "rate04",
+      "reference": "uniform",
+      "ndcg20_relative_percent": 5.198311378347831,
+      "recall20_relative_percent": -8.232066634106038,
+      "sparse_ndcg20_relative_percent": -17.434646600619253
+    },
+    {
+      "seed": 2020,
+      "variant": "rate04",
+      "reference": "rate08",
+      "ndcg20_relative_percent": 3.328834574710182,
+      "recall20_relative_percent": -5.697721295818803,
+      "sparse_ndcg20_relative_percent": 17.321419762092095
+    },
+    {
+      "seed": 2021,
+      "variant": "rate04",
+      "reference": "uniform",
+      "ndcg20_relative_percent": -1.8029080955135446,
+      "recall20_relative_percent": -9.885275032175155,
+      "sparse_ndcg20_relative_percent": -19.92004870135753
+    },
+    {
+      "seed": 2021,
+      "variant": "rate04",
+      "reference": "rate08",
+      "ndcg20_relative_percent": -9.054129141096723,
+      "recall20_relative_percent": -9.880601824572022,
+      "sparse_ndcg20_relative_percent": -11.339932290455568
+    },
+    {
+      "seed": 2021,
+      "variant": "rate02",
+      "reference": "uniform",
+      "ndcg20_relative_percent": 0.701270127597664,
+      "recall20_relative_percent": -1.305225290966272,
+      "sparse_ndcg20_relative_percent": -10.713549521066312
+    },
+    {
+      "seed": 2021,
+      "variant": "rate02",
+      "reference": "rate08",
+      "ndcg20_relative_percent": -6.7348683068932935,
+      "recall20_relative_percent": -1.300107135506945,
+      "sparse_ndcg20_relative_percent": -1.1470085004741781
+    },
+    {
+      "seed": 2022,
+      "variant": "rate02",
+      "reference": "uniform",
+      "ndcg20_relative_percent": -3.218993965264483,
+      "recall20_relative_percent": -6.034631496539012,
+      "sparse_ndcg20_relative_percent": -22.132832567625982
+    },
+    {
+      "seed": 2022,
+      "variant": "rate02",
+      "reference": "rate08",
+      "ndcg20_relative_percent": -10.156258822503517,
+      "recall20_relative_percent": -8.633680767120321,
+      "sparse_ndcg20_relative_percent": -5.230027940171178
+    },
+    {
+      "seed": 2022,
+      "variant": "rate04",
+      "reference": "uniform",
+      "ndcg20_relative_percent": -4.745810610680234,
+      "recall20_relative_percent": -8.851169918824663,
+      "sparse_ndcg20_relative_percent": -34.53178656873843
+    },
+    {
+      "seed": 2022,
+      "variant": "rate04",
+      "reference": "rate08",
+      "ndcg20_relative_percent": -11.573633213786394,
+      "recall20_relative_percent": -11.37231472046606,
+      "sparse_ndcg20_relative_percent": -20.32045132403234
+    }
+  ],
+  "pareto_variants": [
+    "uniform",
+    "rate02",
+    "rate08"
+  ],
+  "extension_review": [],
+  "interpretation": "Exploratory rate ablation on reused validation data/seeds. Compare overall and sparse-user NDCG separately; no composite score or significance claim. Do not evaluate test."
+}

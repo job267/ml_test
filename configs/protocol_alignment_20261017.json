@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "prerequisite": "runs/baseline_calibration_20261016",
+  "author_commit": "7753efd0a8cf3aaed9b150a3d835dbaa8fe0e50d",
+  "alignment": {
+    "seed": 2020, "recdim": 64, "layer": 3, "lr": 0.001, "decay": 0.0001,
+    "batch_size": 2048, "eval_batch": 512, "cpu_probe_steps": 4,
+    "cpu_validation_users": 257, "gpu_probe_steps": 64,
+    "replay_epochs": 3,
+    "tolerances": {
+      "graph_atol": 0.000001, "embedding_atol": 0.000001,
+      "score_atol": 0.000002, "objective_atol": 0.000002,
+      "gradient_atol": 0.0000002, "probe_parameter_atol": 0.00005,
+      "replay_ndcg20_atol": 0.001, "replay_recall20_atol": 0.0015
+    }
+  },
+  "factorial": {
+    "seed": 2020, "positive_rules": ["engagement", "click"],
+    "validation_sources": ["random", "all"],
+    "train_end": 20220428, "val_end": 20220503,
+    "min_train_positives": 2,
+    "recdim": 64, "layer": 3, "lr": 0.001, "decay": 0.0001,
+    "batch_size": 2048, "eval_batch": 512,
+    "initial_epochs": 30, "maximum_epochs": 60,
+    "extension_rule": "If any common-user validation view has its best NDCG@20 in epochs 26-30, extend BOTH label models to 60. Otherwise finish both at 30. No test-based decisions.",
+    "training_users": "Intersection of users eligible under both labels, determined using training data only",
+    "items": "Same sorted vocabulary of all training exposures under both labels",
+    "samples_per_epoch": "Minimum of the two common-cohort positive-pair counts, identical update budget",
+    "primary_evaluation": "Same fixed epochs and intersection of users with targets in all four validation views; report whole available validation cohorts separately",
+    "secondary_selection": "Per label best common-user random-exposure validation NDCG@20; all other views use that SAME checkpoint"
+  },
+  "scope": "Validation-only implementation alignment and label/exposure diagnosis. Original source, prior experiments and current task test labels remain unchanged. No automatic sampling or propagation innovation is added in this sequence."
+}

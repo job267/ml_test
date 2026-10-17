@@ -1,0 +1,1456 @@
+{
+  "updated_utc": "2026-10-17T07:21:10.789482+00:00",
+  "local_split": "val",
+  "current_protocol_test_evaluated": false,
+  "local_rows": [
+    {
+      "model": "mf_bpr_matched_init",
+      "seed": 2020,
+      "horizon": 30,
+      "run": "runs/baseline_calibration_20261016/stage1/mf-seed2020",
+      "best_epoch": 14,
+      "ndcg20": 0.00393739629640467,
+      "recall20": 0.00861437202793824,
+      "sparse_ndcg20": 0.0030951462042420217,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987692062487133,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0011944027986007025
+          ],
+          "recall": [
+            0.00861437202793824
+          ],
+          "ndcg": [
+            0.00393739629640467
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.000596852957135106
+          ],
+          "recall": [
+            0.006763313601420806
+          ],
+          "ndcg": [
+            0.0030951462042420217
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.001555693839452393
+          ],
+          "recall": [
+            0.00846173247003493
+          ],
+          "ndcg": [
+            0.004015027864579781
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0014824463466071242
+          ],
+          "recall": [
+            0.01327978079235543
+          ],
+          "ndcg": [
+            0.005659877820137405
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001182295877122067
+          ],
+          "recall": [
+            0.009402990503923042
+          ],
+          "ndcg": [
+            0.004200686324646581
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0034458449719501185,
+      "late_best": false
+    },
+    {
+      "model": "mf_bpr_matched_init",
+      "seed": 2020,
+      "horizon": 100,
+      "run": "runs/baseline_calibration_20261016/stage1/mf-seed2020",
+      "best_epoch": 14,
+      "ndcg20": 0.00393739629640467,
+      "recall20": 0.00861437202793824,
+      "sparse_ndcg20": 0.0030951462042420217,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987692062487133,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0011944027986007025
+          ],
+          "recall": [
+            0.00861437202793824
+          ],
+          "ndcg": [
+            0.00393739629640467
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.000596852957135106
+          ],
+          "recall": [
+            0.006763313601420806
+          ],
+          "ndcg": [
+            0.0030951462042420217
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.001555693839452393
+          ],
+          "recall": [
+            0.00846173247003493
+          ],
+          "ndcg": [
+            0.004015027864579781
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0014824463466071242
+          ],
+          "recall": [
+            0.01327978079235543
+          ],
+          "ndcg": [
+            0.005659877820137405
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001182295877122067
+          ],
+          "recall": [
+            0.009402990503923042
+          ],
+          "ndcg": [
+            0.004200686324646581
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.003320280343341968,
+      "late_best": false
+    },
+    {
+      "model": "lightgcn_l3",
+      "seed": 2020,
+      "horizon": 30,
+      "run": "runs/stage1_beta_pilot_20261015/uniform-seed2020",
+      "best_epoch": 10,
+      "ndcg20": 0.0043986444256927425,
+      "recall20": 0.009826680877985251,
+      "sparse_ndcg20": 0.004118180012931637,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987647789330611,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.001344327836081964
+          ],
+          "recall": [
+            0.009826680877985251
+          ],
+          "ndcg": [
+            0.0043986444256927425
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0010309278350515468
+          ],
+          "recall": [
+            0.01142216184338582
+          ],
+          "ndcg": [
+            0.004118180012931637
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.001711263223397632
+          ],
+          "recall": [
+            0.009108118419931928
+          ],
+          "ndcg": [
+            0.0048197827476658
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016685274779804059
+          ],
+          "recall": [
+            0.014938513500619683
+          ],
+          "ndcg": [
+            0.006353883275210841
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001222716248989488
+          ],
+          "recall": [
+            0.009699152244385834
+          ],
+          "ndcg": [
+            0.004229557389697862
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004160964752285284,
+      "late_best": false
+    },
+    {
+      "model": "lightgcn_l3",
+      "seed": 2020,
+      "horizon": 100,
+      "run": "runs/stage1_beta_pilot_20261015/uniform-seed2020",
+      "best_epoch": 10,
+      "ndcg20": 0.0043986444256927425,
+      "recall20": 0.009826680877985251,
+      "sparse_ndcg20": 0.004118180012931637,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987647789330611,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.001344327836081964
+          ],
+          "recall": [
+            0.009826680877985251
+          ],
+          "ndcg": [
+            0.0043986444256927425
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0010309278350515468
+          ],
+          "recall": [
+            0.01142216184338582
+          ],
+          "ndcg": [
+            0.004118180012931637
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.001711263223397632
+          ],
+          "recall": [
+            0.009108118419931928
+          ],
+          "ndcg": [
+            0.0048197827476658
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016685274779804059
+          ],
+          "recall": [
+            0.014938513500619683
+          ],
+          "ndcg": [
+            0.006353883275210841
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001222716248989488
+          ],
+          "recall": [
+            0.009699152244385834
+          ],
+          "ndcg": [
+            0.004229557389697862
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004015303861524045,
+      "late_best": false
+    },
+    {
+      "model": "mf_bpr_matched_init",
+      "seed": 2021,
+      "horizon": 30,
+      "run": "runs/baseline_calibration_20261016/stage1/mf-seed2021",
+      "best_epoch": 14,
+      "ndcg20": 0.0038923053565427324,
+      "recall20": 0.008078921737089826,
+      "sparse_ndcg20": 0.003303844316063519,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.998835615983495,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0011094452773613213
+          ],
+          "recall": [
+            0.008078921737089826
+          ],
+          "ndcg": [
+            0.0038923053565427324
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0005697232772653284
+          ],
+          "recall": [
+            0.006981370953156085
+          ],
+          "ndcg": [
+            0.003303844316063519
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0014467952706907258
+          ],
+          "recall": [
+            0.007256853848353653
+          ],
+          "ndcg": [
+            0.0035826745515542624
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0013770003721622654
+          ],
+          "recall": [
+            0.012306095125737599
+          ],
+          "ndcg": [
+            0.005517616662448925
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0010913500404203696
+          ],
+          "recall": [
+            0.009021709184379214
+          ],
+          "ndcg": [
+            0.0043126139872695195
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.003612343631957609,
+      "late_best": false
+    },
+    {
+      "model": "mf_bpr_matched_init",
+      "seed": 2021,
+      "horizon": 100,
+      "run": "runs/baseline_calibration_20261016/stage1/mf-seed2021",
+      "best_epoch": 14,
+      "ndcg20": 0.0038923053565427324,
+      "recall20": 0.008078921737089826,
+      "sparse_ndcg20": 0.003303844316063519,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.998835615983495,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0011094452773613213
+          ],
+          "recall": [
+            0.008078921737089826
+          ],
+          "ndcg": [
+            0.0038923053565427324
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0005697232772653284
+          ],
+          "recall": [
+            0.006981370953156085
+          ],
+          "ndcg": [
+            0.003303844316063519
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0014467952706907258
+          ],
+          "recall": [
+            0.007256853848353653
+          ],
+          "ndcg": [
+            0.0035826745515542624
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0013770003721622654
+          ],
+          "recall": [
+            0.012306095125737599
+          ],
+          "ndcg": [
+            0.005517616662448925
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0010913500404203696
+          ],
+          "recall": [
+            0.009021709184379214
+          ],
+          "ndcg": [
+            0.0043126139872695195
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0030031977595136473,
+      "late_best": false
+    },
+    {
+      "model": "lightgcn_l3",
+      "seed": 2021,
+      "horizon": 30,
+      "run": "runs/baseline_calibration_20261016/stage1/lgn-seed2021",
+      "best_epoch": 14,
+      "ndcg20": 0.004508965563327839,
+      "recall20": 0.010046881996844592,
+      "sparse_ndcg20": 0.004523138819799878,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.998835615983495,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013243378310844628
+          ],
+          "recall": [
+            0.010046881996844592
+          ],
+          "ndcg": [
+            0.004508965563327839
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.001085187194791102
+          ],
+          "recall": [
+            0.012615867757656031
+          ],
+          "ndcg": [
+            0.004523138819799878
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017112632233976318
+          ],
+          "recall": [
+            0.009500305300508419
+          ],
+          "ndcg": [
+            0.005200452051492639
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016437166604639686
+          ],
+          "recall": [
+            0.01514448576651007
+          ],
+          "ndcg": [
+            0.006440721462440428
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0011620856911883565
+          ],
+          "recall": [
+            0.009445034127978166
+          ],
+          "ndcg": [
+            0.004054527631913207
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004037929087437374,
+      "late_best": false
+    },
+    {
+      "model": "lightgcn_l3",
+      "seed": 2021,
+      "horizon": 100,
+      "run": "runs/baseline_calibration_20261016/stage1/lgn-seed2021",
+      "best_epoch": 14,
+      "ndcg20": 0.004508965563327839,
+      "recall20": 0.010046881996844592,
+      "sparse_ndcg20": 0.004523138819799878,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.998835615983495,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013243378310844628
+          ],
+          "recall": [
+            0.010046881996844592
+          ],
+          "ndcg": [
+            0.004508965563327839
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.001085187194791102
+          ],
+          "recall": [
+            0.012615867757656031
+          ],
+          "ndcg": [
+            0.004523138819799878
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0017112632233976318
+          ],
+          "recall": [
+            0.009500305300508419
+          ],
+          "ndcg": [
+            0.005200452051492639
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0016437166604639686
+          ],
+          "recall": [
+            0.01514448576651007
+          ],
+          "ndcg": [
+            0.006440721462440428
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0011620856911883565
+          ],
+          "recall": [
+            0.009445034127978166
+          ],
+          "ndcg": [
+            0.004054527631913207
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.003827640976390543,
+      "late_best": false
+    },
+    {
+      "model": "mf_bpr_matched_init",
+      "seed": 2022,
+      "horizon": 30,
+      "run": "runs/baseline_calibration_20261016/stage1/mf-seed2022",
+      "best_epoch": 11,
+      "ndcg20": 0.0038234721087363,
+      "recall20": 0.007628115033930252,
+      "sparse_ndcg20": 0.002711120616935512,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9988865301134943,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0011694152923538254
+          ],
+          "recall": [
+            0.007628115033930252
+          ],
+          "ndcg": [
+            0.0038234721087363
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.000596852957135106
+          ],
+          "recall": [
+            0.0055832518536348096
+          ],
+          "ndcg": [
+            0.002711120616935512
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.001711263223397632
+          ],
+          "recall": [
+            0.007863790912597812
+          ],
+          "ndcg": [
+            0.004061381464992575
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0014514328247115771
+          ],
+          "recall": [
+            0.011722990121310938
+          ],
+          "ndcg": [
+            0.005507267416485559
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001030719482619238
+          ],
+          "recall": [
+            0.008236688309444982
+          ],
+          "ndcg": [
+            0.004083258513017054
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0034664326868589527,
+      "late_best": false
+    },
+    {
+      "model": "mf_bpr_matched_init",
+      "seed": 2022,
+      "horizon": 100,
+      "run": "runs/baseline_calibration_20261016/stage1/mf-seed2022",
+      "best_epoch": 11,
+      "ndcg20": 0.0038234721087363,
+      "recall20": 0.007628115033930252,
+      "sparse_ndcg20": 0.002711120616935512,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9988865301134943,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0011694152923538254
+          ],
+          "recall": [
+            0.007628115033930252
+          ],
+          "ndcg": [
+            0.0038234721087363
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.000596852957135106
+          ],
+          "recall": [
+            0.0055832518536348096
+          ],
+          "ndcg": [
+            0.002711120616935512
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.001711263223397632
+          ],
+          "recall": [
+            0.007863790912597812
+          ],
+          "ndcg": [
+            0.004061381464992575
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0014514328247115771
+          ],
+          "recall": [
+            0.011722990121310938
+          ],
+          "ndcg": [
+            0.005507267416485559
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.001030719482619238
+          ],
+          "recall": [
+            0.008236688309444982
+          ],
+          "ndcg": [
+            0.004083258513017054
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0030222485457438056,
+      "late_best": false
+    },
+    {
+      "model": "lightgcn_l3",
+      "seed": 2022,
+      "horizon": 30,
+      "run": "runs/baseline_calibration_20261016/stage1/lgn-seed2022",
+      "best_epoch": 7,
+      "ndcg20": 0.004558398220062878,
+      "recall20": 0.009942225365537493,
+      "sparse_ndcg20": 0.004342670195890132,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987669925908873,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013843078460769672
+          ],
+          "recall": [
+            0.009942225365537493
+          ],
+          "ndcg": [
+            0.004558398220062878
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0010309278350515468
+          ],
+          "recall": [
+            0.011460918528914074
+          ],
+          "ndcg": [
+            0.004342670195890132
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0018046048537647753
+          ],
+          "recall": [
+            0.009300186323433022
+          ],
+          "ndcg": [
+            0.004942321074090189
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0017181491130132808
+          ],
+          "recall": [
+            0.015037630981575643
+          ],
+          "ndcg": [
+            0.006567681905937731
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0012429264349231987
+          ],
+          "recall": [
+            0.009793591974514996
+          ],
+          "ndcg": [
+            0.004389372087424765
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.004122774672422548,
+      "late_best": false
+    },
+    {
+      "model": "lightgcn_l3",
+      "seed": 2022,
+      "horizon": 100,
+      "run": "runs/baseline_calibration_20261016/stage1/lgn-seed2022",
+      "best_epoch": 7,
+      "ndcg20": 0.004558398220062878,
+      "recall20": 0.009942225365537493,
+      "sparse_ndcg20": 0.004342670195890132,
+      "tail_ndcg20": 0.0,
+      "tail_hit_pairs": 0,
+      "unique_negative_pair_fraction": 0.9987669925908873,
+      "groups_at_best": {
+        "overall": {
+          "users": 10005,
+          "precision": [
+            0.0013843078460769672
+          ],
+          "recall": [
+            0.009942225365537493
+          ],
+          "ndcg": [
+            0.004558398220062878
+          ]
+        },
+        "user_sparse": {
+          "users": 1843,
+          "precision": [
+            0.0010309278350515468
+          ],
+          "recall": [
+            0.011460918528914074
+          ],
+          "ndcg": [
+            0.004342670195890132
+          ]
+        },
+        "item_tail": {
+          "users": 5833,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        },
+        "user_active": {
+          "users": 3214,
+          "precision": [
+            0.0018046048537647753
+          ],
+          "recall": [
+            0.009300186323433022
+          ],
+          "ndcg": [
+            0.004942321074090189
+          ]
+        },
+        "item_head": {
+          "users": 8061,
+          "precision": [
+            0.0017181491130132808
+          ],
+          "recall": [
+            0.015037630981575643
+          ],
+          "ndcg": [
+            0.006567681905937731
+          ]
+        },
+        "user_middle": {
+          "users": 4948,
+          "precision": [
+            0.0012429264349231987
+          ],
+          "recall": [
+            0.009793591974514996
+          ],
+          "ndcg": [
+            0.004389372087424765
+          ]
+        },
+        "item_zero_degree": {
+          "users": 232,
+          "precision": [
+            0.0
+          ],
+          "recall": [
+            0.0
+          ],
+          "ndcg": [
+            0.0
+          ]
+        }
+      },
+      "last_ndcg20": 0.0036700996107283663,
+      "late_best": false
+    }
+  ],
+  "local_aggregates": [
+    {
+      "model": "mf_bpr_matched_init",
+      "horizon": 30,
+      "n_seeds": 3,
+      "ndcg20": {
+        "mean": 0.0038843912538945673,
+        "sample_std": 5.737294571066373e-05
+      },
+      "recall20": {
+        "mean": 0.00810713626631944,
+        "sample_std": 0.0004937334901565366
+      },
+      "sparse_ndcg20": {
+        "mean": 0.003036703712413684,
+        "sample_std": 0.000300652606034483
+      },
+      "tail_ndcg20": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      }
+    },
+    {
+      "model": "lightgcn_l3",
+      "horizon": 30,
+      "n_seeds": 3,
+      "ndcg20": {
+        "mean": 0.00448866940302782,
+        "sample_std": 8.17879532456151e-05
+      },
+      "recall20": {
+        "mean": 0.009938596080122446,
+        "sample_std": 0.00011014541284681019
+      },
+      "sparse_ndcg20": {
+        "mean": 0.004327996342873882,
+        "sample_std": 0.00020287779643616554
+      },
+      "tail_ndcg20": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      }
+    },
+    {
+      "model": "mf_bpr_matched_init",
+      "horizon": 100,
+      "n_seeds": 3,
+      "ndcg20": {
+        "mean": 0.0038843912538945673,
+        "sample_std": 5.737294571066373e-05
+      },
+      "recall20": {
+        "mean": 0.00810713626631944,
+        "sample_std": 0.0004937334901565366
+      },
+      "sparse_ndcg20": {
+        "mean": 0.003036703712413684,
+        "sample_std": 0.000300652606034483
+      },
+      "tail_ndcg20": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      }
+    },
+    {
+      "model": "lightgcn_l3",
+      "horizon": 100,
+      "n_seeds": 3,
+      "ndcg20": {
+        "mean": 0.00448866940302782,
+        "sample_std": 8.17879532456151e-05
+      },
+      "recall20": {
+        "mean": 0.009938596080122446,
+        "sample_std": 0.00011014541284681019
+      },
+      "sparse_ndcg20": {
+        "mean": 0.004327996342873882,
+        "sample_std": 0.00020287779643616554
+      },
+      "tail_ndcg20": {
+        "mean": 0.0,
+        "sample_std": 0.0
+      }
+    }
+  ],
+  "itemcf": {
+    "completed_utc": "2026-10-16T11:55:36.618223+00:00",
+    "selected": {
+      "variant": "cosine-k200",
+      "weighting": "cosine",
+      "neighbors": 200,
+      "similarity_nnz": 1225683,
+      "validation": {
+        "split": "val",
+        "topks": [
+          20
+        ],
+        "groups": {
+          "overall": {
+            "users": 10005,
+            "precision": [
+              0.0010994502748625705
+            ],
+            "recall": [
+              0.007585822065745657
+            ],
+            "ndcg": [
+              0.0034837578550949502
+            ]
+          },
+          "user_sparse": {
+            "users": 1843,
+            "precision": [
+              0.0006782419967444386
+            ],
+            "recall": [
+              0.008205220956170496
+            ],
+            "ndcg": [
+              0.00323528684815804
+            ]
+          },
+          "item_tail": {
+            "users": 5833,
+            "precision": [
+              1.7143836790673755e-05
+            ],
+            "recall": [
+              9.143379621692668e-05
+            ],
+            "ndcg": [
+              3.456525956003806e-05
+            ]
+          },
+          "user_active": {
+            "users": 3214,
+            "precision": [
+              0.0014467952706907258
+            ],
+            "recall": [
+              0.007093499014947997
+            ],
+            "ndcg": [
+              0.0037037916389496086
+            ]
+          },
+          "item_head": {
+            "users": 8061,
+            "precision": [
+              0.0013521895546458277
+            ],
+            "recall": [
+              0.011582856162278833
+            ],
+            "ndcg": [
+              0.004933888254866051
+            ]
+          },
+          "user_middle": {
+            "users": 4948,
+            "precision": [
+              0.0010307194826192382
+            ],
+            "recall": [
+              0.007674903337008914
+            ],
+            "ndcg": [
+              0.0034333826498556285
+            ]
+          },
+          "item_zero_degree": {
+            "users": 232,
+            "precision": [
+              0.0
+            ],
+            "recall": [
+              0.0
+            ],
+            "ndcg": [
+              0.0
+            ]
+          }
+        },
+        "group_definition": {
+          "user_degree_q25": 6.0,
+          "user_degree_q75": 25.0,
+          "positive_item_degree_median": 14.0,
+          "item_metrics": "subset ground truth within global ranking"
+        }
+      },
+      "elapsed_seconds": 26.718430732144043
+    },
+    "grid_size": 8,
+    "selected_similarity_sha256": "85e063629efdc3af1b83bf9d6f7616e1247a2a55b09185a58d919e5abe177c32",
+    "test_evaluated": false
+  },
+  "public_rows": [
+    {
+      "seed": 2018,
+      "completed_epochs": 320,
+      "selected_epoch": 225,
+      "ndcg20": 0.063,
+      "recall20": 0.1184,
+      "corrected_mask_ndcg20": 0.0646,
+      "corrected_mask_recall20": 0.1205
+    },
+    {
+      "seed": 2019,
+      "completed_epochs": 465,
+      "selected_epoch": 370,
+      "ndcg20": 0.0621,
+      "recall20": 0.1182,
+      "corrected_mask_ndcg20": 0.0636,
+      "corrected_mask_recall20": 0.1202
+    },
+    {
+      "seed": 2020,
+      "completed_epochs": 440,
+      "selected_epoch": 295,
+      "ndcg20": 0.0625,
+      "recall20": 0.1181,
+      "corrected_mask_ndcg20": 0.064,
+      "corrected_mask_recall20": 0.1205
+    },
+    {
+      "seed": 2021,
+      "completed_epochs": 375,
+      "selected_epoch": 280,
+      "ndcg20": 0.0631,
+      "recall20": 0.1192,
+      "corrected_mask_ndcg20": 0.0646,
+      "corrected_mask_recall20": 0.1212
+    }
+  ],
+  "public_aggregate": null,
+  "interpretation": "Local results use the same 30/100 epoch windows and validation selection; ItemCF has one deterministic 8-configuration validation search, not three seeds. Public scores belong to a separate author split and cannot be compared numerically with local scores."
+}

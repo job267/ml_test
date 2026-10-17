@@ -4,12 +4,21 @@ Clean compatibility-oriented reconstruction of [gusye1234/LightGCN-PyTorch](http
 
 Stage-one research now has a **separate** `code/experiment.py` entrypoint for temporal KuaiRand preparation, uniform/hard/reliable/curriculum samplers, validation-only training, isolated checkpoints with resume, and final test suites. These are experimental offline methods, not an implemented online reinforcement-learning system. Legacy model and training code remain unchanged.
 
+- [最新研究状态与可核查结果（2026-10-17 快照）](analysis/research_status_20261017/README.md)
+- [当前阶段的研究推进策略](docs/research_execution_strategy_20261017.md)
 - [第一阶段实现与实验协议](docs/stage1_implementation.md)
 - [从上传云服务器到开始实验的完整步骤](docs/cloud_stage1_runbook.md)
 - [算法研究路线](docs/algorithm_research_roadmap.md)
 - [代码阅读指南](docs/code_structure.md) · [本地验证记录与限制](docs/stage1_validation.md)
 - [使用 GitHub 管理服务器代码](docs/github_server_workflow.md)
 - [第一轮正式实验的验证分析与后续方案](analysis/stage1_validation_20261015/README.md)
+- [第二轮 beta 消融、验证参照与 GPU 0 运行记录](analysis/stage1_beta_pilot_20261015/README.md)
+- [两新种子的 30 轮复核与配对比较](analysis/stage1_beta_replication_20261016/README.md)
+- [降低定向比例：三种子消融](analysis/stage1_targeted_rate_20261016/README.md)
+- [候选池来源消融：纯随机候选的困难选择](analysis/stage1_candidate_source_20261016/README.md)
+- [MF、ItemCF 与公开 LightGCN 基线校准](analysis/baseline_calibration_20261016/README.md)
+- [同数据实现核对与标签／曝光来源诊断](analysis/protocol_alignment_20261017/README.md)
+- [准备固定版本的公开参考文件](references/tpab_7753efd/README.md)
 
 ## Setup (WSL2 / Linux, Python 3.10)
 
@@ -53,4 +62,4 @@ Checkpoints are stored in `checkpoints/` and can be loaded using `--load 1` (opt
 - Uses portable Python BPR negative sampling; no pybind11/compiler required.
 - Adds repeatable miniature unit/smoke tests and explicit checkpoint loading.
 
-This is a reimplementation of the algorithm and workflow, **not** a byte-for-byte mirror of upstream code. The local handover records one successful Gowalla reproduction; its data, weights and logs are not included in this checkout. New KuaiRand method performance has not yet been established. Upstream repo is archived and does not declare a license in its root; check distribution rights before copying any additional upstream files.
+This is a reimplementation of the algorithm and workflow, **not** a byte-for-byte mirror of upstream code. The local handover records one successful Gowalla reproduction; its data, weights and logs are not included in this checkout. Current KuaiRand validation findings, incomplete public reproduction and remaining limitations are recorded in the dated research snapshot above; they do not establish final test performance or a confirmed new algorithm improvement. Upstream repo is archived and does not declare a license in its root; check distribution rights before copying any additional upstream files.

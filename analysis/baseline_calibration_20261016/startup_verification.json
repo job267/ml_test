@@ -1,0 +1,126 @@
+{
+  "audited_utc": "2026-10-16T12:00:10.620411+00:00",
+  "checks": "Public 5-epoch checkpoint, selected weights, optimizer/RNG; MF first committed epochs; unchanged original core hashes; no test evaluation yet",
+  "checkpoints": {
+    "public_seed2018_last": {
+      "path": "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/runs/baseline_calibration_20261016/public/seed2018/last.pt",
+      "sha256_at_audit": "484af9eff9a45ce54943e2c23e9b1f7b837e2904fb2f8812b80d704c6bcd8237",
+      "epoch": 5,
+      "embedding_shapes": {
+        "embedding_user.weight": [
+          22128,
+          64
+        ],
+        "embedding_item.weight": [
+          7076,
+          64
+        ]
+      },
+      "has_optimizer": true
+    },
+    "public_seed2018_best": {
+      "path": "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/runs/baseline_calibration_20261016/public/seed2018/best_val.pt",
+      "sha256_at_audit": "a7db83b3d08d66c12568f2edd8286ed9d16996fd1789f307a3dee05217c27eb7",
+      "epoch": 5,
+      "embedding_shapes": {
+        "embedding_user.weight": [
+          22128,
+          64
+        ],
+        "embedding_item.weight": [
+          7076,
+          64
+        ]
+      },
+      "has_optimizer": false
+    },
+    "mf_seed2020_last": {
+      "path": "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/runs/baseline_calibration_20261016/stage1/mf-seed2020/last.pt",
+      "sha256_at_audit": "f6b02d9caec2accd1da7971a65926107e33ae659e5c371fb4b2ef3e53b6fd8d2",
+      "epoch": 9,
+      "embedding_shapes": {
+        "embedding_user.weight": [
+          24524,
+          64
+        ],
+        "embedding_item.weight": [
+          7583,
+          64
+        ]
+      },
+      "has_optimizer": true
+    }
+  },
+  "tests_passed": 29,
+  "queue": {
+    "status": "running",
+    "queue_pid": 2716531,
+    "started_utc": "2026-10-16T11:54:33.289744+00:00",
+    "finished_stages": [
+      "00-itemcf-sNone-lNone-eNone",
+      "01-public-s2018-lNone-e5"
+    ],
+    "expected_stages": 15,
+    "current_protocol_test_evaluated": false,
+    "active_stage": "02-local-s2020-l0-e30",
+    "updated_utc": "2026-10-16T11:59:58.162866+00:00",
+    "child_pid": 2730136,
+    "command": [
+      "/home/hdd3/zhaob/cache/conda/envs/gcn/bin/python",
+      "-u",
+      "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/code/experiment.py",
+      "--dataset-dir",
+      "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/data/kuairand_stage1",
+      "--device",
+      "cuda",
+      "--epochs",
+      "30",
+      "--model",
+      "lgn",
+      "--recdim",
+      "64",
+      "--layer",
+      "0",
+      "--lr",
+      "0.001",
+      "--decay",
+      "0.0001",
+      "--sampler",
+      "uniform",
+      "--candidate-size",
+      "20",
+      "--evidence-fraction",
+      "0.5",
+      "--weak-confidence",
+      "0.2",
+      "--unknown-confidence",
+      "0.05",
+      "--reliability-beta",
+      "1.0",
+      "--temperature",
+      "1.0",
+      "--targeted-rate",
+      "0.8",
+      "--curriculum-epochs",
+      "100",
+      "--score-batch",
+      "8192",
+      "--bpr-batch",
+      "2048",
+      "--test-batch",
+      "100",
+      "--samples-per-epoch",
+      "0",
+      "--eval-interval",
+      "1",
+      "--topks",
+      "[20]",
+      "--seed",
+      "2020",
+      "--output-root",
+      "/mnt/nfs0/zhaob_node2/projects/neu_pro/ml_test_refactor/runs/baseline_calibration_20261016/stage1",
+      "--run-id",
+      "mf-seed2020"
+    ]
+  }
+}

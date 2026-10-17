@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "seed": 2020,
+  "training": {
+    "model": "lgn", "recdim": 64, "layer": 3,
+    "lr": 0.001, "decay": 0.0001, "epochs": 100,
+    "candidate_size": 20, "evidence_fraction": 0.5,
+    "weak_confidence": 0.2, "unknown_confidence": 0.05,
+    "temperature": 1.0, "targeted_rate": 0.8,
+    "curriculum_epochs": 100, "score_batch": 8192,
+    "bpr_batch": 2048, "test_batch": 100,
+    "samples_per_epoch": 0, "eval_interval": 1, "topks": "[20]"
+  },
+  "variants": [
+    {"id": "uniform", "sampler": "uniform", "reliability_beta": 1.0},
+    {"id": "beta0", "sampler": "reliable", "reliability_beta": 0.0},
+    {"id": "beta005", "sampler": "reliable", "reliability_beta": 0.05},
+    {"id": "beta01", "sampler": "reliable", "reliability_beta": 0.1},
+    {"id": "beta025", "sampler": "reliable", "reliability_beta": 0.25},
+    {"id": "beta1", "sampler": "reliable", "reliability_beta": 1.0}
+  ],
+  "selection": "validation NDCG@20 only; single-seed diagnosis, no test evaluation",
+  "followup": "Replicate promising settings with seeds 2021 and 2022 before claiming a gain."
+}

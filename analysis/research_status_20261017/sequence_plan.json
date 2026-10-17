@@ -1,0 +1,102 @@
+{
+  "config": {
+    "schema_version": 1,
+    "prerequisite": "runs/baseline_calibration_20261016",
+    "author_commit": "7753efd0a8cf3aaed9b150a3d835dbaa8fe0e50d",
+    "alignment": {
+      "seed": 2020,
+      "recdim": 64,
+      "layer": 3,
+      "lr": 0.001,
+      "decay": 0.0001,
+      "batch_size": 2048,
+      "eval_batch": 512,
+      "cpu_probe_steps": 4,
+      "cpu_validation_users": 257,
+      "gpu_probe_steps": 64,
+      "replay_epochs": 3,
+      "tolerances": {
+        "graph_atol": 1e-06,
+        "embedding_atol": 1e-06,
+        "score_atol": 2e-06,
+        "objective_atol": 2e-06,
+        "gradient_atol": 2e-07,
+        "probe_parameter_atol": 5e-05,
+        "replay_ndcg20_atol": 0.001,
+        "replay_recall20_atol": 0.0015
+      }
+    },
+    "factorial": {
+      "seed": 2020,
+      "positive_rules": [
+        "engagement",
+        "click"
+      ],
+      "validation_sources": [
+        "random",
+        "all"
+      ],
+      "train_end": 20220428,
+      "val_end": 20220503,
+      "min_train_positives": 2,
+      "recdim": 64,
+      "layer": 3,
+      "lr": 0.001,
+      "decay": 0.0001,
+      "batch_size": 2048,
+      "eval_batch": 512,
+      "initial_epochs": 30,
+      "maximum_epochs": 60,
+      "extension_rule": "If any common-user validation view has its best NDCG@20 in epochs 26-30, extend BOTH label models to 60. Otherwise finish both at 30. No test-based decisions.",
+      "training_users": "Intersection of users eligible under both labels, determined using training data only",
+      "items": "Same sorted vocabulary of all training exposures under both labels",
+      "samples_per_epoch": "Minimum of the two common-cohort positive-pair counts, identical update budget",
+      "primary_evaluation": "Same fixed epochs and intersection of users with targets in all four validation views; report whole available validation cohorts separately",
+      "secondary_selection": "Per label best common-user random-exposure validation NDCG@20; all other views use that SAME checkpoint"
+    },
+    "scope": "Validation-only implementation alignment and label/exposure diagnosis. Original source, prior experiments and current task test labels remain unchanged. No automatic sampling or propagation innovation is added in this sequence."
+  },
+  "config_sha256": "b358c5cb24f416d40199299b646e521db24ae101e767f221443bf83ee42e2ef6",
+  "driver_sha256": {
+    "analysis/protocol_alignment_20261017/alignment.py": "d0b8c642b6ce78e13ecec21b584afb939fe994fbd1e04c2d5828e131233b7454",
+    "analysis/protocol_alignment_20261017/common.py": "b56681085a0c8d1a61deee3626d728dcfe06fe602101736956ca33946db1cbec",
+    "analysis/protocol_alignment_20261017/dataset.py": "8a7c410d9f778fb464e3ba9604ede1ad6b1c69f10a3a3291da4d772c95e402f7",
+    "analysis/protocol_alignment_20261017/evaluation.py": "caefc10c0f4dd69c5857c7d7712ed84594024fc138569f00e04873d139be12b4",
+    "analysis/protocol_alignment_20261017/factorial.py": "814f08d9ad7aa2a9c63559072a4e89892e46d001bf9e9841027cb222d868dbe3",
+    "analysis/protocol_alignment_20261017/prepare_factorial.py": "f6b8bd2a03d82ead1595489a2abf1d2e9dec15eeff607db76ddab89be909b11a",
+    "analysis/protocol_alignment_20261017/run_sequence.py": "66fd6a5826dc858ba2bc89009b46b775fd8f9fdb3a7a612e05d9a000dfc33256",
+    "analysis/protocol_alignment_20261017/test_protocol.py": "5802cfeb56db3077445c48d7dfffb842dc8b7c159214651e92c026c94834b9e4"
+  },
+  "core_sha256": {
+    "code/Procedure.py": "dfba4797c4fbb6303efa71b329b2165f21b26fd76ed936af50535a5966ab66d2",
+    "code/dataloader.py": "e7b811734789965271486a196618325d8270be53bc93fba7f6ce1e507cc7efd5",
+    "code/experiment.py": "de0801cae045514a5d36dc0409abfc1e4da3021c742481dfad8682900e969fd7",
+    "code/main.py": "d54e23ed24ad34e04f129ddfcbda0c32ecf09ba29bf2f6471c0f8b039721643a",
+    "code/model.py": "0050fd73f608ed5842095bde1ca196d4d874580a9596567b9e89b7b752ad02f2",
+    "code/prepare_kuairand.py": "3d6d8c7ff5756cd76b3f28ca913a2f6cca4fbbb11c339cd01529c53ce367a631",
+    "code/research_common.py": "b14f172ce3276e12c9bbc528745f38397d00decf149f6dfd91d857cb284d297a",
+    "code/research_data.py": "da4b1594cf914f153fdd8e07210b09b3c27a3497fa8d0c0295c32e95eb55d48d",
+    "code/research_evaluation.py": "87b078f56dc450dc20fb1b01a1c1e11abc3a8e74cc11019d24f96f532a7ca852",
+    "code/research_sampling.py": "99f026b7f54e53ee5bbfe71e20efd8ae547d1dc70922b86719053670e58665bb",
+    "code/utils.py": "179a71a11f723c82a6023636dd7e538a68980647e0bb340502f9a8decb1e3e47",
+    "code/world.py": "819939356976f46a47413fb98173acdf91ff9ee73c7035a6ff8055b367b1a751",
+    "scripts/evaluate_stage1.py": "7962eac1bfa8e89047bf2f2b1efe8b240565e610508acf500a63d2645c0d66be",
+    "scripts/package_project.py": "0c1aefc59187f341fba16834275be18f467a12c5b1b832b05d2a1ee69e1c53d3",
+    "scripts/run_stage1.py": "06d7f28c4d87d24245355d9f57331de726af5a43f7b5cd4801a1b8cb66c49f4f",
+    "scripts/summarize_stage1.py": "cd05a3cf88a14b3285d13f00b08b7ea91a8ffc8df9b216e5edc4a2053f18d761"
+  },
+  "author_sha256": {
+    "model.py": "7a27fbcf1aa988be728784629ae938184d1181a9c0b102b397cecc088d4aba9e",
+    "dataloader.py": "e7a295cf6dc48cd9a35f97f02a94d1c93d4194ea61960d90d15853b755f61490",
+    "Procedure.py": "6713bfa79452cb805facb3345cdd65dac475be2939a635155dbcfb4f3d62c1e6",
+    "kuairand/training_dict.npy": "9117d185de8330a65d2f89a8c04401d1b56374f89298717033cdff79ccde287d",
+    "kuairand/validation_dict.npy": "6403cabf5bbb45d1d4447e57ebb88805d666a9396947459f55c4a03f028634c4",
+    "kuairand/s_pre_adj_mat.npz": "a3f53ba883e2b40fb3b70b4a7249363ce8e168b3d27db2da2ecb59de9b17a736"
+  },
+  "previous_plan_sha256": "da48d80d56d7cd7fa3d29ac3fdb9cc97ae3253be78be809744d49d9fa6fc592f",
+  "data_manifest_sha256": "7f32768887cfdb7ea5eb3f7384e3665a08ec3cbc2745c206ac88a643685a55b3",
+  "cpu_preflight_sha256": "2780142417b5c78109b1f41508ce0632d8ea2779e2976b87a3b1a9c7cb78b712",
+  "python": "/home/hdd3/zhaob/cache/conda/envs/gcn/bin/python",
+  "current_protocol_test_evaluated": false,
+  "gpu": "physical GPU 0 only; no CUDA work before prerequisite completion"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "seeds": [2021, 2022],
+  "training": {
+    "model": "lgn", "recdim": 64, "layer": 3,
+    "lr": 0.001, "decay": 0.0001, "epochs": 30,
+    "candidate_size": 20, "evidence_fraction": 0.5,
+    "weak_confidence": 0.2, "unknown_confidence": 0.05,
+    "temperature": 1.0, "targeted_rate": 0.8,
+    "curriculum_epochs": 100, "score_batch": 8192,
+    "bpr_batch": 2048, "test_batch": 100,
+    "samples_per_epoch": 0, "eval_interval": 1, "topks": "[20]"
+  },
+  "variants": [
+    {"id": "uniform", "sampler": "uniform", "reliability_beta": 1.0},
+    {"id": "beta0", "sampler": "reliable", "reliability_beta": 0.0},
+    {"id": "beta025", "sampler": "reliable", "reliability_beta": 0.25}
+  ],
+  "reference_seed": 2020,
+  "reference_root": "runs/stage1_beta_pilot_20261015",
+  "selection": "Best validation NDCG@20 within epochs 1-30; all group metrics from the same epoch.",
+  "interpretation": "Report new seeds 2021/2022 separately from descriptive three-seed results; beta=0.25 was selected using seed 2020.",
+  "extension_review": "Flag any run whose best validation epoch is 26-30 for a common-budget extension review; do not change the initial 30-epoch comparison or evaluate test."
+}

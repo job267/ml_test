@@ -5,3 +5,5 @@
 # original LF baseline and the CRLF research scripts when cloning on Linux.
 /code/*.py -text
 /scripts/*.py -text
+/analysis/**/*.py -text
+/configs/*.json -text

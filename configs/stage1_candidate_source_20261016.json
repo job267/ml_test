@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "seeds": [2020, 2021, 2022],
+  "reference_config": "configs/stage1_targeted_rate_20261016.json",
+  "training": {
+    "model": "lgn", "recdim": 64, "layer": 3,
+    "lr": 0.001, "decay": 0.0001, "epochs": 30,
+    "candidate_size": 20, "evidence_fraction": 0.0,
+    "weak_confidence": 0.2, "unknown_confidence": 0.05,
+    "temperature": 1.0, "targeted_rate": 0.8,
+    "curriculum_epochs": 100, "score_batch": 8192,
+    "bpr_batch": 2048, "test_batch": 100,
+    "samples_per_epoch": 0, "eval_interval": 1, "topks": "[20]"
+  },
+  "selection": "Best validation NDCG@20 in epochs 1-30; Recall and all subgroups from the same selected epoch.",
+  "interpretation": "Change only evidence_fraction from 0.5 to 0 at beta=0, targeted_rate=0.8. Compare three reused seeds with frozen same-budget references. Exploratory validation diagnosis, no test evaluation or significance claim."
+}
